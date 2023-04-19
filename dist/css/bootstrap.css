@@ -3366,7 +3366,7 @@ textarea.form-control-lg {
   --b-btn-bg: transparent;
   --b-btn-border-width: 0;
   --b-btn-border-color: transparent;
-  --b-btn-border-radius: var(--b-border-radius);
+  --b-btn-border-radius: 100rem;
   --b-btn-hover-border-color: transparent;
   --b-btn-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
   --b-btn-disabled-opacity: 0.65;
@@ -3599,6 +3599,7 @@ textarea.form-control-lg {
   --b-btn-disabled-bg: transparent;
   --b-btn-disabled-border-color: #005be2;
   --b-gradient: none;
+  --b-btn-box-shadow: 0 1px 11px rgba(0, 91, 226, 22%), 0 0 5px -2px rgba(0, 91, 226, 72%);
 }
 
 .btn-outline-secondary {
@@ -3616,6 +3617,7 @@ textarea.form-control-lg {
   --b-btn-disabled-bg: transparent;
   --b-btn-disabled-border-color: #6c757d;
   --b-gradient: none;
+  --b-btn-box-shadow: 0 1px 11px rgba(108, 117, 125, 22%), 0 0 5px -2px rgba(108, 117, 125, 72%);
 }
 
 .btn-outline-success {
@@ -3633,6 +3635,7 @@ textarea.form-control-lg {
   --b-btn-disabled-bg: transparent;
   --b-btn-disabled-border-color: #01ed0d;
   --b-gradient: none;
+  --b-btn-box-shadow: 0 1px 11px rgba(1, 237, 13, 22%), 0 0 5px -2px rgba(1, 237, 13, 72%);
 }
 
 .btn-outline-info {
@@ -3650,6 +3653,7 @@ textarea.form-control-lg {
   --b-btn-disabled-bg: transparent;
   --b-btn-disabled-border-color: #00e5ff;
   --b-gradient: none;
+  --b-btn-box-shadow: 0 1px 11px rgba(0, 229, 255, 22%), 0 0 5px -2px rgba(0, 229, 255, 72%);
 }
 
 .btn-outline-warning {
@@ -3667,6 +3671,7 @@ textarea.form-control-lg {
   --b-btn-disabled-bg: transparent;
   --b-btn-disabled-border-color: #fff700;
   --b-gradient: none;
+  --b-btn-box-shadow: 0 1px 11px rgba(255, 247, 0, 22%), 0 0 5px -2px rgba(255, 247, 0, 72%);
 }
 
 .btn-outline-danger {
@@ -3684,6 +3689,7 @@ textarea.form-control-lg {
   --b-btn-disabled-bg: transparent;
   --b-btn-disabled-border-color: #ef130b;
   --b-gradient: none;
+  --b-btn-box-shadow: 0 1px 11px rgba(239, 19, 11, 22%), 0 0 5px -2px rgba(239, 19, 11, 72%);
 }
 
 .btn-outline-light {
@@ -3701,6 +3707,7 @@ textarea.form-control-lg {
   --b-btn-disabled-bg: transparent;
   --b-btn-disabled-border-color: #f8f9fa;
   --b-gradient: none;
+  --b-btn-box-shadow: 0 1px 11px rgba(248, 249, 250, 22%), 0 0 5px -2px rgba(248, 249, 250, 72%);
 }
 
 .btn-outline-dark {
@@ -3718,6 +3725,7 @@ textarea.form-control-lg {
   --b-btn-disabled-bg: transparent;
   --b-btn-disabled-border-color: #212529;
   --b-gradient: none;
+  --b-btn-box-shadow: 0 1px 11px rgba(33, 37, 41, 22%), 0 0 5px -2px rgba(33, 37, 41, 72%);
 }
 
 .btn-link {
@@ -3747,14 +3755,14 @@ textarea.form-control-lg {
   --b-btn-padding-y: 0.5rem;
   --b-btn-padding-x: 1rem;
   --b-btn-font-size: 0.975rem;
-  --b-btn-border-radius: var(--b-border-radius-lg);
+  --b-btn-border-radius: 100rem;
 }
 
 .btn-sm, .btn-group-sm > .btn {
   --b-btn-padding-y: 0.25rem;
   --b-btn-padding-x: 0.5rem;
   --b-btn-font-size: 0.6825rem;
-  --b-btn-border-radius: var(--b-border-radius-sm);
+  --b-btn-border-radius: 100rem;
 }
 
 .fade {
@@ -4120,11 +4128,14 @@ textarea.form-control-lg {
   position: relative;
   display: inline-flex;
   vertical-align: middle;
+  border-radius: 100rem;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.29);
 }
 .btn-group > .btn,
 .btn-group-vertical > .btn {
   position: relative;
   flex: 1 1 auto;
+  --b-btn-box-shadow: none;
 }
 .btn-group > .btn-check:checked + .btn,
 .btn-group > .btn-check:focus + .btn,
@@ -4151,7 +4162,7 @@ textarea.form-control-lg {
 }
 
 .btn-group {
-  border-radius: var(--b-border-radius);
+  border-radius: 100rem;
 }
 .btn-group > :not(.btn-check:first-child) + .btn,
 .btn-group > .btn-group:not(:first-child) {
@@ -4268,18 +4279,16 @@ textarea.form-control-lg {
 .nav-tabs {
   --b-nav-tabs-border-width: var(--b-border-width);
   --b-nav-tabs-border-color: var(--b-border-color);
-  --b-nav-tabs-border-radius: var(--b-border-radius);
+  --b-nav-tabs-border-radius: 100rem;
   --b-nav-tabs-link-hover-border-color: var(--b-secondary-bg) var(--b-secondary-bg) var(--b-border-color);
   --b-nav-tabs-link-active-color: var(--b-emphasis-color);
   --b-nav-tabs-link-active-bg: var(--b-body-bg);
-  --b-nav-tabs-link-active-border-color: var(--b-border-color) var(--b-border-color) var(--b-body-bg);
-  border-bottom: var(--b-nav-tabs-border-width) solid var(--b-nav-tabs-border-color);
+  --b-nav-tabs-link-active-border-color: var(--b-border-color);
 }
 .nav-tabs .nav-link {
   margin-bottom: calc(-1 * var(--b-nav-tabs-border-width));
   border: var(--b-nav-tabs-border-width) solid transparent;
-  border-top-left-radius: var(--b-nav-tabs-border-radius);
-  border-top-right-radius: var(--b-nav-tabs-border-radius);
+  border-radius: var(--b-nav-tabs-border-radius);
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   isolation: isolate;
@@ -4386,7 +4395,7 @@ textarea.form-control-lg {
   --b-navbar-toggler-font-size: 0.975rem;
   --b-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --b-navbar-toggler-border-color: rgba(var(--b-emphasis-color-rgb), 0.15);
-  --b-navbar-toggler-border-radius: var(--b-border-radius);
+  --b-navbar-toggler-border-radius: 100rem;
   --b-navbar-toggler-focus-width: 0.25rem;
   --b-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
   position: relative;

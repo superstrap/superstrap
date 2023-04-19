@@ -58,6 +58,7 @@
   --#{$prefix}btn-disabled-bg: transparent;
   --#{$prefix}btn-disabled-border-color: #{$color};
   --#{$prefix}gradient: none;
+  --#{$prefix}btn-box-shadow: 0 1px 11px rgba(#{to-rgb($color)}, 22%), 0 0 5px -2px rgba(#{to-rgb($color)}, 72%);
 }
 // scss-docs-end btn-outline-variant-mixin
 
