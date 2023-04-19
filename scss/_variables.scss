@@ -898,8 +898,8 @@ $input-disabled-border-color:           null !default;
 
 $input-color:                           var(--#{$prefix}body-color) !default;
 $input-border-color:                    var(--#{$prefix}border-color) !default;
-$input-border-width:                    $input-btn-border-width !default;
-$input-box-shadow:                      $box-shadow-inset, $box-shadow !default;
+$input-border-width:                    0.5px !default;
+$input-box-shadow:                      $box-shadow-sm !default;
 
 $input-border-radius:                   var(--#{$prefix}border-radius) !default;
 $input-border-radius-sm:                var(--#{$prefix}border-radius-sm) !default;
@@ -1340,7 +1340,7 @@ $card-subtitle-color:               null !default;
 $card-border-width:                 .5px !default;
 $card-border-color:                 transparent !default;
 $card-border-radius:                $border-radius !default;
-$card-box-shadow:                   0 1px 5px rgba($black, 30%) !default;
+$card-box-shadow:                   $box-shadow !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
 $card-cap-padding-y:                .3rem !default;
 $card-cap-padding-x:                $card-spacer-x !default;
