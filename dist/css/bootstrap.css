@@ -3787,11 +3787,11 @@ textarea.form-control-lg {
   --strap-dropdown-zindex: 1000;
   --strap-dropdown-min-width: 10rem;
   --strap-dropdown-padding-x: 0;
-  --strap-dropdown-padding-y: 0.5rem;
-  --strap-dropdown-spacer: 0.125rem;
+  --strap-dropdown-padding-y: 0.2rem;
+  --strap-dropdown-spacer: 0.75rem;
   --strap-dropdown-font-size: 0.78rem;
-  --strap-dropdown-color: var(--strap-body-color);
-  --strap-dropdown-bg: var(--strap-body-bg);
+  --strap-dropdown-color: #212529;
+  --strap-dropdown-bg: rgba(255, 255, 255, 0.75);
   --strap-dropdown-border-color: var(--strap-border-color-translucent);
   --strap-dropdown-border-radius: var(--strap-border-radius);
   --strap-dropdown-border-width: var(--strap-border-width);
@@ -3809,7 +3809,7 @@ textarea.form-control-lg {
   --strap-dropdown-item-padding-y: 0.25rem;
   --strap-dropdown-header-color: #6c757d;
   --strap-dropdown-header-padding-x: 1rem;
-  --strap-dropdown-header-padding-y: 0.5rem;
+  --strap-dropdown-header-padding-y: 0.2rem;
   position: absolute;
   z-index: var(--strap-dropdown-zindex);
   display: none;
@@ -4189,8 +4189,8 @@ textarea.form-control-lg {
 }
 
 .nav {
-  --strap-nav-link-padding-x: 1rem;
-  --strap-nav-link-padding-y: 0.5rem;
+  --strap-nav-link-padding-x: 0.75rem;
+  --strap-nav-link-padding-y: 0.2rem;
   --strap-nav-link-font-weight: ;
   --strap-nav-link-color: var(--strap-link-color);
   --strap-nav-link-hover-color: var(--strap-link-hover-color);
@@ -4234,7 +4234,7 @@ textarea.form-control-lg {
 .nav-tabs {
   --strap-nav-tabs-border-width: var(--strap-border-width);
   --strap-nav-tabs-border-color: var(--strap-border-color);
-  --strap-nav-tabs-border-radius: 100rem;
+  --strap-nav-tabs-border-radius: var(--strap-border-radius);
   --strap-nav-tabs-link-hover-border-color: var(--strap-secondary-bg) var(--strap-secondary-bg) var(--strap-border-color);
   --strap-nav-tabs-link-active-color: var(--strap-emphasis-color);
   --strap-nav-tabs-link-active-bg: var(--strap-body-bg);
@@ -4339,7 +4339,7 @@ textarea.form-control-lg {
   --strap-navbar-hover-color: rgba(var(--strap-emphasis-color-rgb), 0.8);
   --strap-navbar-disabled-color: rgba(var(--strap-emphasis-color-rgb), 0.3);
   --strap-navbar-active-color: rgba(var(--strap-emphasis-color-rgb), 1);
-  --strap-navbar-brand-padding-y: 0.35375rem;
+  --strap-navbar-brand-padding-y: 0.05375rem;
   --strap-navbar-brand-margin-end: 1rem;
   --strap-navbar-brand-font-size: 0.975rem;
   --strap-navbar-brand-color: rgba(var(--strap-emphasis-color-rgb), 1);
@@ -4388,7 +4388,7 @@ textarea.form-control-lg {
 
 .navbar-nav {
   --strap-nav-link-padding-x: 0;
-  --strap-nav-link-padding-y: 0.5rem;
+  --strap-nav-link-padding-y: 0.2rem;
   --strap-nav-link-font-weight: ;
   --strap-nav-link-color: var(--strap-navbar-color);
   --strap-nav-link-hover-color: var(--strap-navbar-hover-color);
@@ -4407,8 +4407,8 @@ textarea.form-control-lg {
 }
 
 .navbar-text {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
   color: var(--strap-navbar-color);
 }
 .navbar-text a,
@@ -5128,7 +5128,7 @@ textarea.form-control-lg {
 
 .pagination {
   --strap-pagination-padding-x: 0.75rem;
-  --strap-pagination-padding-y: 0.375rem;
+  --strap-pagination-padding-y: 0.2rem;
   --strap-pagination-font-size: 0.78rem;
   --strap-pagination-color: var(--strap-link-color);
   --strap-pagination-bg: var(--strap-body-bg);
