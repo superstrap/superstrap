@@ -102,9 +102,9 @@
   --b-border-style: solid;
   --b-border-color: #dee2e6;
   --b-border-color-translucent: rgba(0, 0, 0, 0.175);
-  --b-border-radius: 0.375rem;
-  --b-border-radius-sm: 0.25rem;
-  --b-border-radius-lg: 0.5rem;
+  --b-border-radius: 0.625rem;
+  --b-border-radius-sm: 0.5rem;
+  --b-border-radius-lg: 0.75rem;
   --b-border-radius-xl: 1rem;
   --b-border-radius-xxl: 2rem;
   --b-border-radius-2xl: var(--b-border-radius-xxl);

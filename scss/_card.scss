@@ -109,6 +109,7 @@
   color: var(--#{$prefix}card-cap-color);
   background-color: var(--#{$prefix}card-cap-bg);
   border-bottom: var(--#{$prefix}card-border-width) solid var(--#{$prefix}card-border-color);
+  font-size: 13px;
 
   &:first-child {
     @include border-radius(var(--#{$prefix}card-inner-border-radius) var(--#{$prefix}card-inner-border-radius) 0 0);
