@@ -32,6 +32,7 @@
   --#{$prefix}btn-disabled-color: #{$disabled-color};
   --#{$prefix}btn-disabled-bg: #{$disabled-background};
   --#{$prefix}btn-disabled-border-color: #{$disabled-border};
+  --#{$prefix}btn-box-shadow: default, 0 -1px 5px rgba(#{to-rgb($background)}, 0.22);
 }
 // scss-docs-end btn-variant-mixin
 
