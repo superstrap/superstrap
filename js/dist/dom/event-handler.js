@@ -1,6 +1,6 @@
 /*!
-  * superstrap event-handler.js v1.0.0 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)
+  * SuperStrap event-handler.js v1.0.0 (https://getbootstrap.com/)
+  * Copyright 2023 The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
@@ -11,8 +11,8 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap dom/event-handler.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * SuperStrap dom/event-handler.js
+   * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -44,7 +44,7 @@
     eventRegistry[uid] = eventRegistry[uid] || {};
     return eventRegistry[uid];
   }
-  function bootstrapHandler(element, fn) {
+  function superstrapHandler(element, fn) {
     return function handler(event) {
       hydrateObj(event, {
         delegateTarget: element
@@ -55,7 +55,7 @@
       return fn.apply(element, [event]);
     };
   }
-  function bootstrapDelegationHandler(element, selector, fn) {
+  function superstrapDelegationHandler(element, selector, fn) {
     return function handler(event) {
       const domElements = element.querySelectorAll(selector);
       for (let {
@@ -115,7 +115,7 @@
       return;
     }
     const uid = makeEventUid(callable, originalTypeEvent.replace(namespaceRegex, ''));
-    const fn = isDelegated ? bootstrapDelegationHandler(element, handler, callable) : bootstrapHandler(element, callable);
+    const fn = isDelegated ? superstrapDelegationHandler(element, handler, callable) : superstrapHandler(element, callable);
     fn.delegationSelector = isDelegated ? handler : null;
     fn.callable = callable;
     fn.oneOff = oneOff;

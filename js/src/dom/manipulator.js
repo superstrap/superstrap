@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap dom/manipulator.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Superstrap dom/manipulator.js
+ * Licensed under MIT (https://github.com/twbs/Superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 

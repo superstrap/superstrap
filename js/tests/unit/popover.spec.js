@@ -78,7 +78,7 @@ describe('Popover', () => {
 
         const popoverEl = fixtureEl.querySelector('a')
         const popover = new Popover(popoverEl, {
-          title: () => 'Bootstrap',
+          title: () => 'superStrap',
           content: () => 'loves writing tests （╯°□°）╯︵ ┻━┻'
         })
 
@@ -86,7 +86,7 @@ describe('Popover', () => {
           const popoverDisplayed = document.querySelector('.popover')
 
           expect(popoverDisplayed).not.toBeNull()
-          expect(popoverDisplayed.querySelector('.popover-header').textContent).toEqual('Bootstrap')
+          expect(popoverDisplayed.querySelector('.popover-header').textContent).toEqual('superStrap')
           expect(popoverDisplayed.querySelector('.popover-body').textContent).toEqual('loves writing tests （╯°□°）╯︵ ┻━┻')
           resolve()
         })

@@ -1,14 +1,14 @@
 /*!
-  * superstrap v1.0.0 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)
+  * SuperStrap v1.0.0 (https://getbootstrap.com/)
+  * Copyright 2023 The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
   */
 import * as Popper from '@popperjs/core';
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap dom/data.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap dom/data.js
+ * Licensed under MIT (https://github.com/twbs/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -28,7 +28,7 @@ const Data = {
     // can be removed later when multiple key/instances are fine to be used
     if (!instanceMap.has(key) && instanceMap.size !== 0) {
       // eslint-disable-next-line no-console
-      console.error(`Bootstrap doesn't allow more than one instance per element. Bound instance: ${Array.from(instanceMap.keys())[0]}.`);
+      console.error(`SuperStrap doesn't allow more than one instance per element. Bound instance: ${Array.from(instanceMap.keys())[0]}.`);
       return;
     }
     instanceMap.set(key, instance);
@@ -55,8 +55,8 @@ const Data = {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap util/index.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap util/*
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -302,8 +302,8 @@ const getNextActiveElement = (list, activeElement, shouldGetNext, isCycleAllowed
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap dom/event-handler.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap dom/event-handler.js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -335,7 +335,7 @@ function getElementEvents(element) {
   eventRegistry[uid] = eventRegistry[uid] || {};
   return eventRegistry[uid];
 }
-function bootstrapHandler(element, fn) {
+function superstrapHandler(element, fn) {
   return function handler(event) {
     hydrateObj(event, {
       delegateTarget: element
@@ -346,7 +346,7 @@ function bootstrapHandler(element, fn) {
     return fn.apply(element, [event]);
   };
 }
-function bootstrapDelegationHandler(element, selector, fn) {
+function superstrapDelegationHandler(element, selector, fn) {
   return function handler(event) {
     const domElements = element.querySelectorAll(selector);
     for (let {
@@ -406,7 +406,7 @@ function addHandler(element, originalTypeEvent, handler, delegationFunction, one
     return;
   }
   const uid = makeEventUid(callable, originalTypeEvent.replace(namespaceRegex, ''));
-  const fn = isDelegated ? bootstrapDelegationHandler(element, handler, callable) : bootstrapHandler(element, callable);
+  const fn = isDelegated ? superstrapDelegationHandler(element, handler, callable) : superstrapHandler(element, callable);
   fn.delegationSelector = isDelegated ? handler : null;
   fn.callable = callable;
   fn.oneOff = oneOff;
@@ -523,8 +523,8 @@ function hydrateObj(obj, meta = {}) {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap dom/manipulator.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Superstrap dom/manipulator.js
+ * Licensed under MIT (https://github.com/twbs/Superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -580,8 +580,8 @@ const Manipulator = {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap util/config.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap util/*
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -632,8 +632,8 @@ class Config {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap base-component.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -700,8 +700,8 @@ class BaseComponent extends Config {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap dom/selector-engine.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Superstrap dom/selector-engine.js
+ * Licensed under MIT (https://github.com/twbs/Superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 const getSelector = element => {
@@ -712,7 +712,6 @@ const getSelector = element => {
     // The only valid content that could double as a selector are IDs or classes,
     // so everything starting with `#` or `.`. If a "real" URL is used as the selector,
     // `document.querySelector` will rightfully complain it is invalid.
-    // See https://github.com/twbs/bootstrap/issues/32273
     if (!hrefAttribute || !hrefAttribute.includes('#') && !hrefAttribute.startsWith('.')) {
       return null;
     }
@@ -788,8 +787,8 @@ const SelectorEngine = {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap util/component-functions.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap util/*
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 const enableDismissTrigger = (component, method = 'hide') => {
@@ -812,8 +811,8 @@ const enableDismissTrigger = (component, method = 'hide') => {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap alert.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -886,8 +885,8 @@ defineJQueryPlugin(Alert);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap button.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -949,8 +948,8 @@ defineJQueryPlugin(Button);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap util/swipe.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap util/*
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -1068,8 +1067,8 @@ class Swipe extends Config {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap carousel.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -1440,8 +1439,8 @@ defineJQueryPlugin(Carousel);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap collapse.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -1673,8 +1672,8 @@ defineJQueryPlugin(Collapse);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap dropdown.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -2040,8 +2039,8 @@ defineJQueryPlugin(Dropdown);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap util/backdrop.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap util/*
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -2164,8 +2163,8 @@ class Backdrop extends Config {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap util/focustrap.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap util/*
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -2262,8 +2261,8 @@ class FocusTrap extends Config {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap util/scrollBar.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap util/*
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -2359,8 +2358,8 @@ class ScrollBarHelper {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap modal.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -2663,8 +2662,8 @@ defineJQueryPlugin(Modal);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap offcanvas.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -2893,8 +2892,8 @@ defineJQueryPlugin(Offcanvas);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap util/sanitizer.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap util/*
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -2992,8 +2991,8 @@ function sanitizeHtml(unsafeHtml, allowList, sanitizeFunction) {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap util/template-factory.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap util/*
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -3127,8 +3126,8 @@ class TemplateFactory extends Config {
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap tooltip.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -3638,8 +3637,8 @@ defineJQueryPlugin(Tooltip);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap popover.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -3718,8 +3717,8 @@ defineJQueryPlugin(Popover);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap scrollspy.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -3977,8 +3976,8 @@ defineJQueryPlugin(ScrollSpy);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap tab.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
@@ -4238,8 +4237,8 @@ defineJQueryPlugin(Tab);
 
 /**
  * --------------------------------------------------------------------------
- * Bootstrap toast.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 
