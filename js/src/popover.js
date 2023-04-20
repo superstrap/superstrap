@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap popover.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 

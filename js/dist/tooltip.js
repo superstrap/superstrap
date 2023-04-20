@@ -1,6 +1,6 @@
 /*!
-  * superstrap tooltip.js v1.0.0 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)
+  * SuperStrap tooltip.js v1.0.0 (https://getbootstrap.com/)
+  * Copyright 2023 The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
@@ -30,8 +30,8 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap tooltip.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * SuperStrap js
+   * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 

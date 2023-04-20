@@ -389,7 +389,7 @@ $color-mode-type:             data !default; // `data` or `media-query`
 
 // Prefix for :root CSS variables
 
-$variable-prefix:             strap- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$variable-prefix:             strap- !default; // Deprecated in v1.0.0 for the shorter `$prefix`
 $prefix:                      $variable-prefix !default;
 
 // Gradient
@@ -402,7 +402,7 @@ $gradient: linear-gradient(180deg, rgba($white, .18), rgba($white, 0)) !default;
 
 // Spacing
 //
-// Control the default styling of most Bootstrap elements by modifying these
+// Control the default styling of most superStrap elements by modifying these
 // variables. Mostly focused on spacing.
 // You can add more entries to the $spacers map, should you need more variation.
 
@@ -552,7 +552,7 @@ $border-radius-xxl:           2rem !default;
 $border-radius-pill:          50rem !default;
 // scss-docs-end border-radius-variables
 // fusv-disable
-$border-radius-2xl:           $border-radius-xxl !default; // Deprecated in v5.3.0
+$border-radius-2xl:           $border-radius-xxl !default; // Deprecated in v1.0.0
 // fusv-enable
 
 // scss-docs-start box-shadow-variables
@@ -683,7 +683,7 @@ $small-font-size:             .875em !default;
 $sub-sup-font-size:           .75em !default;
 
 // fusv-disable
-$text-muted:                  var(--#{$prefix}secondary-color) !default; // Deprecated in 5.3.0
+$text-muted:                  var(--#{$prefix}secondary-color) !default; // Deprecated in 1.0.0
 // fusv-enable
 
 $initialism-font-size:        $small-font-size !default;
@@ -697,8 +697,8 @@ $hr-margin-y:                 $spacer !default;
 $hr-color:                    inherit !default;
 
 // fusv-disable
-$hr-bg-color:                 null !default; // Deprecated in v5.2.0
-$hr-height:                   null !default; // Deprecated in v5.2.0
+$hr-bg-color:                 null !default; // Deprecated in v1.0.0
+$hr-height:                   null !default; // Deprecated in v1.0.0
 // fusv-enable
 
 $hr-border-color:             null !default; // Allows for inherited colors
@@ -807,7 +807,7 @@ $input-btn-border-width:      $border-width !default;
 
 // Buttons
 //
-// For each of Bootstrap's buttons, define text, background, and border color.
+// For each of superStrap's buttons, define text, background, and border color.
 
 // scss-docs-start btn-variables
 $btn-color:                   var(--#{$prefix}body-color) !default;
@@ -1260,7 +1260,7 @@ $dropdown-header-color:             $gray-600 !default;
 $dropdown-header-padding-x:         $dropdown-item-padding-x !default;
 $dropdown-header-padding-y:         $dropdown-padding-y !default;
 // fusv-disable
-$dropdown-header-padding:           $dropdown-header-padding-y $dropdown-header-padding-x !default; // Deprecated in v5.2.0
+$dropdown-header-padding:           $dropdown-header-padding-y $dropdown-header-padding-x !default; // Deprecated in v1.0.0
 // fusv-enable
 // scss-docs-end dropdown-variables
 
@@ -1406,7 +1406,7 @@ $tooltip-margin:                    null !default; // TODO: remove this in v6
 $tooltip-arrow-width:               .8rem !default;
 $tooltip-arrow-height:              .4rem !default;
 // fusv-disable
-$tooltip-arrow-color:               null !default; // Deprecated in Bootstrap 5.2.0 for CSS variables
+$tooltip-arrow-color:               null !default;
 // fusv-enable
 // scss-docs-end tooltip-variables
 
@@ -1448,7 +1448,7 @@ $popover-arrow-height:              .5rem !default;
 // scss-docs-end popover-variables
 
 // fusv-disable
-// Deprecated in Bootstrap 5.2.0 for CSS variables
+// Deprecated in superStrap 1.0.0 for CSS variables
 $popover-arrow-color:               $popover-bg !default;
 $popover-arrow-outer-color:         var(--#{$prefix}border-color-translucent) !default;
 // fusv-enable
@@ -1551,9 +1551,9 @@ $alert-dismissible-padding-r:   $alert-padding-x * 3 !default; // 3x covers widt
 // scss-docs-end alert-variables
 
 // fusv-disable
-$alert-bg-scale:                -80% !default; // Deprecated in v5.2.0, to be removed in v6
-$alert-border-scale:            -70% !default; // Deprecated in v5.2.0, to be removed in v6
-$alert-color-scale:             40% !default; // Deprecated in v5.2.0, to be removed in v6
+$alert-bg-scale:                -80% !default; // Deprecated in v1.0.0, to be removed in v2
+$alert-border-scale:            -70% !default; // Deprecated in v1.0.0, to be removed in v2
+$alert-color-scale:             40% !default; // Deprecated in v1.0.0, to be removed in v2
 // fusv-enable
 
 // Progress bars
@@ -1583,8 +1583,8 @@ $list-group-border-radius:          var(--#{$prefix}border-radius) !default;
 $list-group-item-padding-y:         $spacer * .5 !default;
 $list-group-item-padding-x:         $spacer !default;
 // fusv-disable
-$list-group-item-bg-scale:          -80% !default; // Deprecated in v5.3.0
-$list-group-item-color-scale:       40% !default; // Deprecated in v5.3.0
+$list-group-item-bg-scale:          -80% !default; // Deprecated in v1.0.0
+$list-group-item-color-scale:       40% !default; // Deprecated in v1.0.0
 // fusv-enable
 
 $list-group-hover-bg:               var(--#{$prefix}tertiary-bg) !default;
@@ -1739,6 +1739,6 @@ $kbd-padding-x:                     .375rem !default;
 $kbd-font-size:                     $code-font-size !default;
 $kbd-color:                         var(--#{$prefix}body-bg) !default;
 $kbd-bg:                            var(--#{$prefix}body-color) !default;
-$nested-kbd-font-weight:            null !default; // Deprecated in v5.2.0, removing in v6
+$nested-kbd-font-weight:            null !default; // Deprecated in v1.0.0, removing in v2
 
 $pre-color:                         null !default;

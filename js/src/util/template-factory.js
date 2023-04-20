@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap util/template-factory.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap util/*
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 

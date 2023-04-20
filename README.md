@@ -23,10 +23,8 @@ Our default branch is for development of our superStrap `v1.0` branch. Head to t
 ## Table of contents
 
 - [Quick start](#quick-start)
-- [Status](#status)
 - [What's included](#whats-included)
 - [Bugs and feature requests](#bugs-and-feature-requests)
-- [Documentation](#documentation)
 - [Contributing](#contributing)
 - [Community](#community)
 - [Versioning](#versioning)
@@ -161,14 +159,7 @@ Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infras
 Thanks to [Netlify](https://www.netlify.com/) for providing us with Deploy Previews!
 
 
-
-## Backers
-
-Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/superstrap#backer)]
-
-[![Backers](https://opencollective.com/superstrap/backers.svg?width=890)](https://opencollective.com/superstrap#backers)
-
-
 ## Copyright and license
 
-Code and documentation copyright 2011–2023 the [superstrap Authors](https://github.com/gtoy1118/superstrap/graphs/contributors). Code released under the [MIT License](https://github.com/gtoy1118/superstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
+Code and documentation copyright 2011–2023 the [superstrap Authors](https://github.com/gtoy1118/superstrap/graphs/contributors)
+ and the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors). Code released under the [MIT License](https://github.com/gtoy1118/superstrap/blob/main/LICENSE).

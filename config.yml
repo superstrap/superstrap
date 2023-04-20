@@ -1,6 +1,6 @@
 languageCode:           "en"
-title:                  "Bootstrap"
-baseURL:                "https://getbootstrap.com"
+title:                  "superStrap"
+baseURL:                "https://github.com/gtoy1118/"
 
 security:
   enableInlineShortcodes: true
@@ -50,7 +50,7 @@ module:
 params:
   subtitle:             "The most popular HTML, CSS, and JS library in the world."
   description:          "Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."
-  authors:              "Mark Otto, Jacob Thornton, and Bootstrap contributors"
+  authors:              "gtoy1118, muchtek"
 
   current_version:      "5.3.0-alpha3"
   current_ruby_version: "5.3.0.alpha3"

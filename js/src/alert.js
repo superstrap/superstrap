@@ -1,9 +1,10 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap alert.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap js
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
+
 
 import BaseComponent from './base-component.js'
 import EventHandler from './dom/event-handler.js'
