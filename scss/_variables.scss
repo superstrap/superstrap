@@ -42,10 +42,10 @@ $purple:  #b134ff !default;
 $pink:    #df004a !default;
 $red:     #ef130b !default;
 $orange:  #ff9100 !default;
-$yellow:  #fff700 !default;
-$green:   #01ed0d !default;
-$teal:    #0ebe7b !default;
-$cyan:    #00e5ff !default;
+$yellow:  #d4a20c !default;
+$green:   #07900e !default;
+$teal:    #0ebea4 !default;
+$cyan:    #00aaff !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -69,7 +69,7 @@ $colors: (
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
-$min-contrast-ratio:   3 !default;
+$min-contrast-ratio:   2.2 !default;
 
 // Customize the light and dark text colors for use in our color contrast function.
 $color-contrast-dark:      $black !default;
@@ -299,7 +299,7 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$secondary:     $gray-500 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -1230,7 +1230,7 @@ $navbar-dark-brand-hover-color:     $navbar-dark-active-color !default;
 // scss-docs-start dropdown-variables
 $dropdown-min-width:                10rem !default;
 $dropdown-padding-x:                5px !default;
-$dropdown-padding-y:                0 !default;
+$dropdown-padding-y:                5px !default;
 $dropdown-spacer:                   .75rem !default;
 $dropdown-font-size:                $font-size-base !default;
 $dropdown-color:                    rgba($body-color, 1) !default;
@@ -1254,6 +1254,7 @@ $dropdown-link-disabled-color:      var(--#{$prefix}tertiary-color) !default;
 
 $dropdown-item-padding-y:           $spacer * .25 !default;
 $dropdown-item-padding-x:           $spacer !default;
+$dropdown-item-border-radius:       $dropdown-inner-border-radius !default;
 
 $dropdown-header-color:             $gray-600 !default;
 $dropdown-header-padding-x:         $dropdown-item-padding-x !default;
@@ -1633,7 +1634,7 @@ $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
 $breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
-$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-divider:                quote("\130BA") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
 // scss-docs-end breadcrumb-variables
