@@ -61,6 +61,7 @@
   border: var(--#{$prefix}dropdown-border-width) solid var(--#{$prefix}dropdown-border-color);
   @include border-radius(var(--#{$prefix}dropdown-border-radius));
   @include box-shadow(var(--#{$prefix}dropdown-box-shadow));
+  backdrop-filter: blur(30px) saturate(200%);
 
   &[data-bs-popper] {
     top: 100%;

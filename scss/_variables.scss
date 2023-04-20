@@ -36,7 +36,7 @@ $grays: (
 // fusv-enable
 
 // scss-docs-start color-variables
-$blue:    #005be2 !default;
+$blue:    #2775ea !default;
 $indigo:  #3c00ac !default;
 $purple:  #b134ff !default;
 $pink:    #df004a !default;
@@ -530,9 +530,9 @@ $container-padding-x: $grid-gutter-width !default;
 // Define common padding and border radius sizes and more.
 
 // scss-docs-start border-variables
-$border-width:                1px !default;
+$border-width:                .5px !default;
 $border-widths: (
-  1: 1px,
+  1: .5px,
   2: 2px,
   3: 3px,
   4: 4px,
@@ -801,7 +801,7 @@ $input-btn-padding-y-lg:      .3rem !default;
 $input-btn-padding-x-lg:      1rem !default;
 $input-btn-font-size-lg:      $font-size-lg !default;
 
-$input-btn-border-width:      0 !default;
+$input-btn-border-width:      $border-width !default;
 // scss-docs-end input-btn-variables
 
 
@@ -898,7 +898,7 @@ $input-disabled-border-color:           null !default;
 
 $input-color:                           var(--#{$prefix}body-color) !default;
 $input-border-color:                    var(--#{$prefix}border-color) !default;
-$input-border-width:                    0.5px !default;
+$input-border-width:                    var(--#{$prefix}border-width) !default;
 $input-box-shadow:                      $box-shadow-sm !default;
 
 $input-border-radius:                   var(--#{$prefix}border-radius) !default;
@@ -1229,12 +1229,12 @@ $navbar-dark-brand-hover-color:     $navbar-dark-active-color !default;
 
 // scss-docs-start dropdown-variables
 $dropdown-min-width:                10rem !default;
-$dropdown-padding-x:                0 !default;
-$dropdown-padding-y:                .2rem !default;
+$dropdown-padding-x:                5px !default;
+$dropdown-padding-y:                0 !default;
 $dropdown-spacer:                   .75rem !default;
 $dropdown-font-size:                $font-size-base !default;
 $dropdown-color:                    rgba($body-color, 1) !default;
-$dropdown-bg:                       rgba($body-bg, .75) !default;
+$dropdown-bg:                       $body-bg !default;
 $dropdown-border-color:             var(--#{$prefix}border-color-translucent) !default;
 $dropdown-border-radius:            var(--#{$prefix}border-radius) !default;
 $dropdown-border-width:             var(--#{$prefix}border-width) !default;
@@ -1337,8 +1337,8 @@ $card-spacer-x:                     $spacer !default;
 $card-title-spacer-y:               $spacer * .5 !default;
 $card-title-color:                  null !default;
 $card-subtitle-color:               null !default;
-$card-border-width:                 .5px !default;
-$card-border-color:                 transparent !default;
+$card-border-width:                 $border-width !default;
+$card-border-color:                 $border-color-translucent !default;
 $card-border-radius:                $border-radius !default;
 $card-box-shadow:                   $box-shadow !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
@@ -1489,7 +1489,7 @@ $badge-border-radius:               var(--#{$prefix}border-radius) !default;
 // Modals
 
 // scss-docs-start modal-variables
-$modal-inner-padding:               $spacer !default;
+$modal-inner-padding:               $spacer*.75 !default;
 
 $modal-footer-margin-between:       .5rem !default;
 
@@ -1499,7 +1499,7 @@ $modal-dialog-margin-y-sm-up:       1.75rem !default;
 $modal-title-line-height:           $line-height-base !default;
 
 $modal-content-color:               null !default;
-$modal-content-bg:                  var(--#{$prefix}body-bg) !default;
+$modal-content-bg:                  $body-bg !default;
 $modal-content-border-color:        var(--#{$prefix}border-color-translucent) !default;
 $modal-content-border-width:        var(--#{$prefix}border-width) !default;
 $modal-content-border-radius:       var(--#{$prefix}border-radius-lg) !default;

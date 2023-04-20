@@ -325,7 +325,7 @@
                                           <div class="form-group row mb-3">
                                               <label class="col-lg-2 col-form-label form-control-label"></label>
                                               <div class="col-lg-10">
-                                                  <input type="reset" class="btn btn-outline-secondary me-2" value="Cancel">
+                                                  <input type="reset" class="btn btn-outline-secondary me-2" value="Cancel" data-bs-toggle="modal" data-bs-target="#myModal">
                                                   <input type="button" class="btn btn-primary me-2" value="Submit">
                                                   <div class="custom-control custom-checkbox d-inline">
                                                       <input type="checkbox" class="custom-control-input" id="customCheck" checked="">
@@ -387,6 +387,30 @@
               </div>
           </div>
       </div>
+  
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
   </div>
   </body>
 </html>
