@@ -17,7 +17,7 @@
 
 ## superstrap 5
 
-Our default branch is for development of our superStrap `main` branch. Head to the [`main` branch](https://github.com/gtoy1118/superstrap/tree/main) to view the readme, documentation, and source code.
+Our default branch is for development of our superStrap `v1.0` branch. Head to the [`v1.0` branch](https://github.com/gtoy1118/superstrap/tree/v1.0) to view the readme, documentation, and source code.
 
 
 ## Table of contents
@@ -41,9 +41,6 @@ Several quick start options are available:
 
 - [Download the latest release](https://github.com/gtoy1118/superstrap/archive/v5.3.0-alpha3.zip)
 - Clone the repo: `git clone https://github.com/gtoy1118/superstrap.git`
-
-
-## Status
 
 
 ## What's included
@@ -110,28 +107,6 @@ We provide compiled CSS and JS (`superstrap.*`), as well as compiled and minifie
 ## Bugs and feature requests
 
 Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/gtoy1118/superstrap/blob/main/.github/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/gtoy1118/superstrap/issues/new/choose).
-
-
-## Documentation
-
-SuperStrap's documentation, included in this repo in the root directory, is built with [Hugo](https://gohugo.io/) and publicly hosted on GitHub Pages at <https://getsuperstrap.com/>. The docs may also be run locally.
-
-Documentation search is powered by [Algolia's DocSearch](https://docsearch.algolia.com/).
-
-### Running documentation locally
-
-1. Run `npm install` to install the Node.js dependencies, including Hugo (the site builder).
-2. Run `npm run test` (or a specific npm script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
-3. From the root `/superstrap` directory, run `npm run docs-serve` in the command line.
-4. Open `http://localhost:9001/` in your browser, and voilà.
-
-Learn more about using Hugo by reading its [documentation](https://gohugo.io/documentation/).
-
-### Documentation for previous releases
-
-You can find all our previous releases docs on <https://getsuperstrap.com/docs/versions/>.
-
-[Previous releases](https://github.com/gtoy1118/superstrap/releases) and their documentation are also available for download.
 
 
 ## Contributing

@@ -72,9 +72,9 @@
   --strap-black-rgb: 0, 0, 0;
   --strap-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --strap-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  --strap-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  --strap-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
   --strap-body-font-family: var(--strap-font-sans-serif);
-  --strap-body-font-size: 0.78rem;
+  --strap-body-font-size: 0.813rem;
   --strap-body-font-weight: 400;
   --strap-body-line-height: 1.5;
   --strap-body-color: #212529;
@@ -83,11 +83,11 @@
   --strap-body-bg-rgb: 255, 255, 255;
   --strap-emphasis-color: #000;
   --strap-emphasis-color-rgb: 0, 0, 0;
-  --strap-secondary-color: rgba(33, 37, 41, 0.75);
+  --strap-secondary-color: rgba(33, 37, 41, 0.5);
   --strap-secondary-color-rgb: 33, 37, 41;
   --strap-secondary-bg: #e9ecef;
   --strap-secondary-bg-rgb: 233, 236, 239;
-  --strap-tertiary-color: rgba(33, 37, 41, 0.5);
+  --strap-tertiary-color: rgba(33, 37, 41, 0.25);
   --strap-tertiary-color-rgb: 33, 37, 41;
   --strap-tertiary-bg: #f8f9fa;
   --strap-tertiary-bg-rgb: 248, 249, 250;
@@ -505,7 +505,7 @@
   width: 1px;
   min-height: 1em;
   background-color: currentcolor;
-  opacity: 0.25;
+  opacity: 0.5;
 }
 
 .align-baseline {
@@ -1669,27 +1669,27 @@
 }
 
 .fs-1 {
-  font-size: calc(1.32rem + 0.84vw) !important;
+  font-size: calc(1.32825rem + 0.939vw) !important;
 }
 
 .fs-2 {
-  font-size: calc(1.281rem + 0.372vw) !important;
+  font-size: calc(1.2876rem + 0.4512vw) !important;
 }
 
 .fs-3 {
-  font-size: calc(1.2615rem + 0.138vw) !important;
+  font-size: calc(1.267275rem + 0.2073vw) !important;
 }
 
 .fs-4 {
-  font-size: 1.17rem !important;
+  font-size: 1.2195rem !important;
 }
 
 .fs-5 {
-  font-size: 0.975rem !important;
+  font-size: 1.01625rem !important;
 }
 
 .fs-6 {
-  font-size: 0.78rem !important;
+  font-size: 0.813rem !important;
 }
 
 .fst-italic {
@@ -5232,13 +5232,13 @@
 }
 @media (min-width: 1200px) {
   .fs-1 {
-    font-size: 1.95rem !important;
+    font-size: 2.0325rem !important;
   }
   .fs-2 {
-    font-size: 1.56rem !important;
+    font-size: 1.626rem !important;
   }
   .fs-3 {
-    font-size: 1.365rem !important;
+    font-size: 1.42275rem !important;
   }
 }
 @media print {

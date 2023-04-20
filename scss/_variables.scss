@@ -397,7 +397,7 @@ $prefix:                      $variable-prefix !default;
 // The gradient which is added to components if `$enable-gradients` is `true`
 // This gradient is also added to elements with `.bg-gradient`
 // scss-docs-start variable-gradient
-$gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
+$gradient: linear-gradient(180deg, rgba($white, .18), rgba($white, 0)) !default;
 // scss-docs-end variable-gradient
 
 // Spacing
@@ -438,10 +438,10 @@ $body-text-align:           null !default;
 $body-color:                $gray-900 !default;
 $body-bg:                   $white !default;
 
-$body-secondary-color:      rgba($body-color, .75) !default;
+$body-secondary-color:      rgba($body-color, .5) !default;
 $body-secondary-bg:         $gray-200 !default;
 
-$body-tertiary-color:       rgba($body-color, .5) !default;
+$body-tertiary-color:       rgba($body-color, .25) !default;
 $body-tertiary-bg:          $gray-100 !default;
 
 $body-emphasis-color:       $black !default;
@@ -575,8 +575,8 @@ $focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color
 
 // scss-docs-start caret-variables
 $caret-width:                 .3em !default;
-$caret-vertical-align:        $caret-width * .85 !default;
-$caret-spacing:               $caret-width * .85 !default;
+$caret-vertical-align:        $caret-width * .7 !default;
+$caret-spacing:               $caret-width * 1.3 !default;
 // scss-docs-end caret-variables
 
 $transition-base:             all .2s ease-in-out !default;
@@ -612,7 +612,7 @@ $font-family-code:            var(--#{$prefix}font-monospace) !default;
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
 $font-size-root:              null !default;
-$font-size-base:              .78rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              .813rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 
@@ -690,7 +690,7 @@ $initialism-font-size:        $small-font-size !default;
 
 $blockquote-margin-y:         $spacer !default;
 $blockquote-font-size:        $font-size-base * 1.25 !default;
-$blockquote-footer-color:     $gray-600 !default;
+$blockquote-footer-color:     $gray-700 !default;
 $blockquote-footer-font-size: $small-font-size !default;
 
 $hr-margin-y:                 $spacer !default;
@@ -703,7 +703,7 @@ $hr-height:                   null !default; // Deprecated in v5.2.0
 
 $hr-border-color:             null !default; // Allows for inherited colors
 $hr-border-width:             var(--#{$prefix}border-width) !default;
-$hr-opacity:                  .25 !default;
+$hr-opacity:                  .5 !default;
 
 $legend-margin-bottom:        .5rem !default;
 $legend-font-size:            1.5rem !default;
@@ -737,11 +737,11 @@ $table-accent-bg:             transparent !default;
 $table-th-font-weight:        null !default;
 
 $table-striped-color:         $table-color !default;
-$table-striped-bg-factor:     .05 !default;
+$table-striped-bg-factor:     .1 !default;
 $table-striped-bg:            rgba($black, $table-striped-bg-factor) !default;
 
 $table-active-color:          $table-color !default;
-$table-active-bg-factor:      .1 !default;
+$table-active-bg-factor:      .15 !default;
 $table-active-bg:             rgba($black, $table-active-bg-factor) !default;
 
 $table-hover-color:           $table-color !default;
@@ -1254,7 +1254,7 @@ $dropdown-link-disabled-color:      var(--#{$prefix}tertiary-color) !default;
 
 $dropdown-item-padding-y:           $spacer * .25 !default;
 $dropdown-item-padding-x:           $spacer !default;
-$dropdown-item-border-radius:       $dropdown-inner-border-radius !default;
+$dropdown-item-border-radius:       $border-radius-sm !default;
 
 $dropdown-header-color:             $gray-600 !default;
 $dropdown-header-padding-x:         $dropdown-item-padding-x !default;
@@ -1634,7 +1634,7 @@ $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          var(--#{$prefix}secondary-color) !default;
 $breadcrumb-active-color:           var(--#{$prefix}secondary-color) !default;
-$breadcrumb-divider:                quote("\130BA") !default;
+$breadcrumb-divider:                quote("\203A") !default;
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
 // scss-docs-end breadcrumb-variables
