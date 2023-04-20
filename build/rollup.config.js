@@ -9,7 +9,7 @@ const banner = require('./banner.js')
 const BUNDLE = process.env.BUNDLE === 'true'
 const ESM = process.env.ESM === 'true'
 
-let fileDestination = `bootstrap${ESM ? '.esm' : ''}`
+let fileDestination = `superstrap${ESM ? '.esm' : ''}`
 const external = ['@popperjs/core']
 const plugins = [
   babel({

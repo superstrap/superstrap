@@ -5,8 +5,8 @@
  * Remember to use the same vendor files as the CDN ones,
  * otherwise the hashes won't match!
  *
- * Copyright 2017-2023 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Copyright 2017-2023 The superstrap Authors
+ * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  */
 
 'use strict'
@@ -25,19 +25,19 @@ const configFile = path.join(__dirname, '../config.yml')
 // `configPropertyName` is the config.yml variable's name of the file
 const files = [
   {
-    file: 'dist/css/bootstrap.min.css',
+    file: 'dist/css/superstrap.min.css',
     configPropertyName: 'css_hash'
   },
   {
-    file: 'dist/css/bootstrap.rtl.min.css',
+    file: 'dist/css/superstrap.rtl.min.css',
     configPropertyName: 'css_rtl_hash'
   },
   {
-    file: 'dist/js/bootstrap.min.js',
+    file: 'dist/js/superstrap.min.js',
     configPropertyName: 'js_hash'
   },
   {
-    file: 'dist/js/bootstrap.bundle.min.js',
+    file: 'dist/js/superstrap.bundle.min.js',
     configPropertyName: 'js_bundle_hash'
   },
   {

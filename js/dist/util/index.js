@@ -1,7 +1,7 @@
 /*!
-  * Bootstrap index.js v5.3.0-alpha3 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  * superstrap index.js v1.0.0 (https://getbootstrap.com/)
+  * Copyright 2011-2023 The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -16,7 +16,7 @@
    * --------------------------------------------------------------------------
    */
 
-  const MAX_UID = 1000000;
+  const MAX_UID = 1_000_000;
   const MILLISECONDS_MULTIPLIER = 1000;
   const TRANSITION_END = 'transitionend';
 

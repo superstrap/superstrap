@@ -34,7 +34,7 @@
   --strap-info: #00aaff;
   --strap-warning: #d4a20c;
   --strap-danger: #ef130b;
-  --strap-light: #f8f9fa;
+  --strap-light: #e9ecef;
   --strap-dark: #212529;
   --strap-primary-rgb: 39, 117, 234;
   --strap-secondary-rgb: 173, 181, 189;
@@ -42,7 +42,7 @@
   --strap-info-rgb: 0, 170, 255;
   --strap-warning-rgb: 212, 162, 12;
   --strap-danger-rgb: 239, 19, 11;
-  --strap-light-rgb: 248, 249, 250;
+  --strap-light-rgb: 233, 236, 239;
   --strap-dark-rgb: 33, 37, 41;
   --strap-primary-text-emphasis: #102f5e;
   --strap-secondary-text-emphasis: #45484c;
@@ -261,10 +261,8 @@ p {
 }
 
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 

@@ -1,7 +1,7 @@
 /*!
-  * Bootstrap v5.3.0-alpha3 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  * superstrap v1.0.0 (https://getbootstrap.com/)
+  * Copyright 2011-2023 The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -64,7 +64,7 @@
    * --------------------------------------------------------------------------
    */
 
-  const MAX_UID = 1000000;
+  const MAX_UID = 1_000_000;
   const MILLISECONDS_MULTIPLIER = 1000;
   const TRANSITION_END = 'transitionend';
 
@@ -513,7 +513,7 @@
     for (const [key, value] of Object.entries(meta)) {
       try {
         obj[key] = value;
-      } catch (_unused) {
+      } catch {
         Object.defineProperty(obj, key, {
           configurable: true,
           get() {
@@ -550,7 +550,7 @@
     }
     try {
       return JSON.parse(decodeURIComponent(value));
-    } catch (_unused) {
+    } catch {
       return value;
     }
   }
@@ -6270,8 +6270,8 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap index.umd.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * superStrap index.umd.js
+   * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
   const index_umd = {
@@ -6292,4 +6292,4 @@
   return index_umd;
 
 }));
-//# sourceMappingURL=bootstrap.bundle.js.map
+//# sourceMappingURL=superstrap.bundle.js.map

@@ -1,7 +1,7 @@
 /*!
-  * Bootstrap v5.3.0-alpha3 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  * superstrap v1.0.0 (https://getbootstrap.com/)
+  * Copyright 2011-2023 The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
   */
 import * as Popper from '@popperjs/core';
 
@@ -60,7 +60,7 @@ const Data = {
  * --------------------------------------------------------------------------
  */
 
-const MAX_UID = 1000000;
+const MAX_UID = 1_000_000;
 const MILLISECONDS_MULTIPLIER = 1000;
 const TRANSITION_END = 'transitionend';
 
@@ -509,7 +509,7 @@ function hydrateObj(obj, meta = {}) {
   for (const [key, value] of Object.entries(meta)) {
     try {
       obj[key] = value;
-    } catch (_unused) {
+    } catch {
       Object.defineProperty(obj, key, {
         configurable: true,
         get() {
@@ -546,7 +546,7 @@ function normalizeData(value) {
   }
   try {
     return JSON.parse(decodeURIComponent(value));
-  } catch (_unused) {
+  } catch {
     return value;
   }
 }
@@ -4420,4 +4420,4 @@ enableDismissTrigger(Toast);
 defineJQueryPlugin(Toast);
 
 export { Alert, Button, Carousel, Collapse, Dropdown, Modal, Offcanvas, Popover, ScrollSpy, Tab, Toast, Tooltip };
-//# sourceMappingURL=bootstrap.esm.js.map
+//# sourceMappingURL=superstrap.esm.js.map

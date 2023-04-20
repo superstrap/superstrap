@@ -1,7 +1,7 @@
 /*!
-  * Bootstrap base-component.js v5.3.0-alpha3 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  * superstrap base-component.js v1.0.0 (https://getbootstrap.com/)
+  * Copyright 2011-2023 The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('./dom/data.js'), require('./dom/event-handler.js'), require('./util/config.js'), require('./util/index.js')) :
