@@ -1,5 +1,5 @@
 {
-  "name": "superstrap",
+  "name": "@gtoy1118/superstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
   "version": "1.0.0",
   "config": {
@@ -15,12 +15,10 @@
     "web",
     "bootstrap"
   ],
-  "homepage": "https://getbootstrap.com/",
   "author": "The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)",
   "license": "MIT",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gtoy1118/superstrap.git"
+    "url": "git://github.com/gtoy1118/superstrap.git"
   },
   "bugs": {
     "url": "https://github.com/gtoy1118/superstrap/issues"
