@@ -1,22 +1,27 @@
+const app = require("express")();
+const fetch = require("node-fetch");
+const ejs = require("ejs");
 const port = 8080;
-var express = require('express');
-var app = express();
 
-// set the view engine to ejs
-app.set('view engine', 'ejs');
+const projects = require("./projects");
+const route = require("./route");
 
-// use res.render to load up an ejs view file
+app.engine("html", ejs.renderFile);
+app.set('view engine', "html");
+app.set('views', __dirname + '/temp');
 
-// index page
-app.get('/', function(req, res) {
-  res.render('pages/index');
-});
+app.use(route.signIn);
 
-// about page
-app.get('/about', function(req, res) {
-  res.render('pages/about');
-});
+app.use(require("express").static(__dirname + "/public"));
 
-app.listen(8080);
+app
+  .get("/", (req, res) => {
+    res.render("index")
+  })
+;
 
-console.log("server is listening at port " + port);
+app.use(route[404])
+
+app.listen(port);
+
+console.log("server started at port " + port);
