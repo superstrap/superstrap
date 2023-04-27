@@ -18,7 +18,13 @@ app
   .get("/", (req, res) => {
     res.render("index")
   })
-;
+  ;
+
+app
+  .get("/docs/getting-started/introduction", (req, res) => {
+    res.render("docs/getting-started/introduction/index")
+  })
+  ;
 
 app.use(route[404])
 
