@@ -1,7 +1,7 @@
 {
-  "name": "@gtoy1118/superstrap",
+  "name": "@superstrap/superstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "config": {
     "version_short": "1.0"
   },
@@ -18,7 +18,7 @@
   "author": "The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/gtoy1118/superstrap.git"
+    "url": "git://github.com/superstrap/superstrap.github.io.git"
   },
   "bugs": {
     "url": "https://github.com/gtoy1118/superstrap/issues"
@@ -181,5 +181,10 @@
     "peerDependencies": {
       "@popperjs/core": "^2.11.7"
     }
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.1"
   }
 }

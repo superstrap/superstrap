@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <%- include("parts/head",{
+      title: `Home`,
+      description: "SuperStrap is a CSS framework for creating stylish and user-friendly web applications, perfect for developers of any level."
+    }) %>
+  </head>
+  <body data-bs-theme="light">
+    <%- include("parts/symbols") %>
+    <%- include("parts/nav") %>
+    <main>
+      <div class="masthead mb-3" id="content">
+        <div class="container-xxl bd-gutter">
+          <div class="col-md-8 mx-auto text-center">
+            <img src="assets/brand.png" width="400" height="400" alt="Bootstrap" class="d-none d-sm-block mx-auto mb-3">
+            <h1 class="mb-3 fw-semibold lh-1">Create fast, responsive, and beautiful webpages  with superStrap</h1>
+            <p class="lead mb-4">
+            SuperStrap is a CSS framework for creating stylish and user-friendly web applications, perfect for developers of any level. 
+            </p>
+            <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
+            <div class="d-block">
+              <a href="docs/getting-started/introduction" class="btn btn-primary">Read the docs</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
