@@ -3,6 +3,7 @@
  * Copyright 2023 The superStrap Authors
  * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.gabrieltoy1.repl.co/fonts/fonts.css");
 :root,
 [data-bs-theme=light] {
   --strap-blue: #2775ea;
@@ -70,7 +71,7 @@
   --strap-dark-border-subtle: #adb5bd;
   --strap-white-rgb: 255, 255, 255;
   --strap-black-rgb: 0, 0, 0;
-  --strap-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --strap-font-sans-serif: Google Sans, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --strap-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --strap-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
   --strap-body-font-family: var(--strap-font-sans-serif);
@@ -261,10 +262,8 @@ p {
 }
 
 abbr[title] {
-  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
   text-decoration-skip-ink: none;
 }
 
