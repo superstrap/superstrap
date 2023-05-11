@@ -33,10 +33,10 @@
       "url": "https://opencollective.com/bootstrap"
     }
   ],
-  "main": "dist/js/bootstrap.js",
-  "module": "dist/js/bootstrap.esm.js",
-  "sass": "scss/bootstrap.scss",
-  "style": "dist/css/bootstrap.css",
+  "main": "dist/js/superstrap.js",
+  "module": "dist/js/superstrap.esm.js",
+  "sass": "scss/superstrap.scss",
+  "style": "dist/css/superstrap.css",
   "scripts": {
     "start": "npm-run-all --parallel watch docs-serve",
     "bundlewatch": "bundlewatch --config .bundlewatch.config.json",

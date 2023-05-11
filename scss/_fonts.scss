@@ -1,0 +1,29 @@
+$weights: (
+  "400": "Regular",
+  "500": "Medium",
+  "700": "Bold"
+);
+
+@each $key, $val in $weights {
+  @font-face {
+    font-family: Google Sans;
+    font-weight: #{$key};
+    font-style: normal;
+    src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-#{$val}.ttf");
+  }
+  @if $key != "400" {
+    @font-face {
+      font-family: Google Sans;
+      font-weight: #{$key};
+      font-style: Italic;
+      src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-#{$val}Italic.ttf");
+    }
+  } @else {
+    @font-face {
+      font-family: Google Sans;
+      font-weight: #{$key};
+      font-style: Italic;
+      src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Italic.ttf");
+    }
+  }
+}
