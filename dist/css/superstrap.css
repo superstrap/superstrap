@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*!
- * SuperStrap  v1.0.0 (https://github.com/gtoy1118/superstrap/)
+ * SuperStrap  v1.0.0 (https://github.com/superstrap/superstrap/)
  * Copyright 2023 The superStrap Authors
- * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
  */
 @font-face {
   font-family: Google Sans;
@@ -3126,6 +3126,10 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%;
+  box-shadow: var(--strap-box-shadow);
+}
+.input-group:nth-child(n) {
+  box-shadow: none !important;
 }
 .input-group > .form-control,
 .input-group > .form-select,

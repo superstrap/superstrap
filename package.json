@@ -15,24 +15,14 @@
     "web",
     "bootstrap"
   ],
-  "author": "The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)",
+  "author": "The superStrap Authors (https://github.com/superstrap/superstrap/graphs/contributors)",
   "license": "MIT",
   "repository": {
-    "url": "git://github.com/superstrap/superstrap.github.io.git"
+    "url": "git://github.com/superstrap/superstrap.git"
   },
   "bugs": {
-    "url": "https://github.com/gtoy1118/superstrap/issues"
+    "url": "https://github.com/superstrap/superstrap/issues"
   },
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/twbs"
-    },
-    {
-      "type": "opencollective",
-      "url": "https://opencollective.com/bootstrap"
-    }
-  ],
   "main": "dist/js/superstrap.js",
   "module": "dist/js/superstrap.esm.js",
   "sass": "scss/superstrap.scss",
