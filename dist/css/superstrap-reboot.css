@@ -1,8 +1,44 @@
 /*!
- * SuperStrap Reboot v1.0.0 (https://github.com/gtoy1118/superstrap/)
+ * SuperStrap Reboot v1.0.0 (https://github.com/superstrap/superstrap/)
  * Copyright 2023 The superStrap Authors
- * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
+ * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
  */
+@font-face {
+  font-family: Google Sans;
+  font-weight: 400;
+  font-style: normal;
+  src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Regular.ttf");
+}
+@font-face {
+  font-family: Google Sans;
+  font-weight: 400;
+  font-style: Italic;
+  src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Italic.ttf");
+}
+@font-face {
+  font-family: Google Sans;
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Medium.ttf");
+}
+@font-face {
+  font-family: Google Sans;
+  font-weight: 500;
+  font-style: Italic;
+  src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-MediumItalic.ttf");
+}
+@font-face {
+  font-family: Google Sans;
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Bold.ttf");
+}
+@font-face {
+  font-family: Google Sans;
+  font-weight: 700;
+  font-style: Italic;
+  src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-BoldItalic.ttf");
+}
 :root,
 [data-bs-theme=light] {
   --strap-blue: #2775ea;
@@ -70,7 +106,7 @@
   --strap-dark-border-subtle: #adb5bd;
   --strap-white-rgb: 255, 255, 255;
   --strap-black-rgb: 0, 0, 0;
-  --strap-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --strap-font-sans-serif: Google Sans, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --strap-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --strap-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
   --strap-body-font-family: var(--strap-font-sans-serif);

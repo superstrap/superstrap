@@ -1,6 +1,6 @@
 /*!
-  * SuperStrap focustrap.js v1.0.0 (https://getbootstrap.com/)
-  * Copyright 2023 The superStrap Authors (https://github.com/gtoy1118/superstrap/graphs/contributors)
+  * SuperStrap focustrap.js v1.0.1 (undefined)
+  * Copyright 2023 The superStrap Authors (https://github.com/superstrap/superstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/gtoy1118/superstrap/blob/main/LICENSE)
   */
 (function (global, factory) {

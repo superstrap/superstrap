@@ -1,7 +1,6 @@
 const app = require("express")();
-const fetch = require("node-fetch");
 const ejs = require("ejs");
-const port = 8080;
+const port = 5151;
 
 const projects = require("./projects");
 const route = require("./route");
@@ -14,11 +13,14 @@ app.use(route.signIn);
 
 app.use(require("express").static(__dirname + "/public"));
 
-app
-  .get("/", (req, res) => {
-    res.render("index")
-  })
-  ;
+/*app.get("/", (req, res) => {
+  res.render("index")
+});*/
+
+app.get("/", (req, res) => {
+  res.render("demo")
+});
+
 
 app
   .get("/docs/getting-started/introduction", (req, res) => {
