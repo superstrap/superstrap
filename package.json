@@ -40,6 +40,7 @@
   "style": "dist/css/bootstrap.css",
   "scripts": {
     "start": "npm-run-all --parallel watch docs-serve",
+    "run": "npm-run-all docs-build docs-serve",
     "bundlewatch": "bundlewatch --config .bundlewatch.config.json",
     "css": "npm-run-all css-compile css-prefix css-rtl css-minify",
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
@@ -79,8 +80,8 @@
     "docs-compile": "npm run docs-build",
     "docs-vnu": "node build/vnu-jar.js",
     "docs-lint": "npm run docs-vnu",
-    "docs-serve": "hugo server --port 9001 --disableFastRender --printUnusedTemplates",
-    "docs-serve-only": "npx sirv-cli _site --port 9001",
+    "docs-serve": "hugo server --bind 0.0.0.0 --port 443 --baseURL https://bootstrap-2.gabrieltoy1.repl.co --disableFastRender --printUnusedTemplates",
+    "docs-serve-only": "npx sirv-cli _site --bind 0.0.0.0 --port 443 --baseURL https://bootstrap-2.gabrieltoy1.repl.co",
     "lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
     "update-deps": "ncu -u -x globby,karma-browserstack-launcher,karma-rollup-preprocessor,terser && echo Manually update site/assets/js/vendor",
     "release": "npm-run-all dist release-sri docs-build release-zip*",

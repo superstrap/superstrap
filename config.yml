@@ -1,6 +1,6 @@
 languageCode:           "en"
 title:                  "Bootstrap"
-baseURL:                "https://getbootstrap.com"
+baseURL:                "https://bootstrap-2.gabrieltoy1.repl.co"
 
 security:
   enableInlineShortcodes: true
