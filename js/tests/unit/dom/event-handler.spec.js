@@ -169,10 +169,10 @@ describe('EventHandler', () => {
           }
         }
 
-        EventHandler.one(div, 'bootstrap', obj.oneListener)
+        EventHandler.one(div, 'superstrap', obj.oneListener)
 
-        EventHandler.trigger(div, 'bootstrap')
-        EventHandler.trigger(div, 'bootstrap')
+        EventHandler.trigger(div, 'superstrap')
+        EventHandler.trigger(div, 'superstrap')
 
         setTimeout(() => {
           expect(called).toEqual(1)
@@ -193,10 +193,10 @@ describe('EventHandler', () => {
           }
         }
 
-        EventHandler.one(fixtureEl, 'bootstrap', 'div', obj.oneListener)
+        EventHandler.one(fixtureEl, 'superstrap', 'div', obj.oneListener)
 
-        EventHandler.trigger(div, 'bootstrap')
-        EventHandler.trigger(div, 'bootstrap')
+        EventHandler.trigger(div, 'superstrap')
+        EventHandler.trigger(div, 'superstrap')
 
         setTimeout(() => {
           expect(called).toEqual(1)

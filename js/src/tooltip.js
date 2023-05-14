@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap tooltip.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap tooltip.js
+ * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 

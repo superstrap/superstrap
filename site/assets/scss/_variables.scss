@@ -21,7 +21,7 @@ $bd-callout-variants: info, warning, danger !default;
   --bd-sidebar-link-bg: rgba(var(--bd-violet-rgb), .1);
   --bd-callout-link: #{to-rgb($blue-600)};
   --bd-callout-code-color: #{$pink-600};
-  --bd-pre-bg: var(--bs-tertiary-bg);
+  --bd-pre-bg: var(--strap-tertiary-bg);
 }
 
 @include color-mode(dark, true) {

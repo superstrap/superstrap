@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap util/scrollBar.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap util/scrollBar.js
+ * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 

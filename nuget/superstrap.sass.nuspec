@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>superstrap.sass</id>
+    <!-- pulled from package.json -->
+    <version>1</version>
+    <title>SuperStrap Sass</title>
+    <authors>The SuperStrap Authors</authors>
+    <owners>superstrap</owners>
+    <description>The most popular front-end framework for developing responsive, mobile first projects on the web.</description>
+    <releaseNotes>https://blog.getbootstrap.com/</releaseNotes>
+    <summary>Bootstrap framework in Sass. Includes JavaScript</summary>
+    <language>en-us</language>
+    <projectUrl>https://getbootstrap.com/</projectUrl>
+    <repository type="git" url="https://github.com/superstrap/superstrap.git" branch="main" />
+    <icon>superstrap.png</icon>
+    <license type="expression">MIT</license>
+    <copyright>Copyright 2023</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>css sass mobile-first responsive front-end framework web</tags>
+    <contentFiles>
+      <files include="**/*" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="nuget\superstrap.png" target="" />
+
+    <file src="scss\**\*.scss" target="content\Content\superstrap" />
+    <file src="dist\js\superstrap*.js" target="content\Scripts" />
+    <file src="dist\js\superstrap*.js.map" target="content\Scripts" />
+
+    <file src="scss\**\*.scss" target="contentFiles\any\any\wwwroot\scss" />
+    <file src="dist\js\superstrap*.js" target="contentFiles\any\any\wwwroot\js" />
+    <file src="dist\js\superstrap*.js.map" target="contentFiles\any\any\wwwroot\js" />
+  </files>
+</package>

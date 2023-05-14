@@ -15,7 +15,7 @@
 
   window.docsearch({
     apiKey: '3151f502c7b9e9dafd5e6372b691a24e',
-    indexName: 'bootstrap',
+    indexName: 'superstrap',
     appId: 'AK7KMZKZHQ',
     container: searchElement,
     searchParameters: {
@@ -23,7 +23,7 @@
     },
     transformItems(items) {
       return items.map(item => {
-        const liveUrl = 'https://getbootstrap.com/'
+        const liveUrl = 'https://bootstrap-2.gabrieltoy1.repl.co/'
 
         item.url = window.location.origin.startsWith(liveUrl) ?
           // On production, return the result as is

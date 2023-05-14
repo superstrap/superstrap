@@ -5,13 +5,13 @@
 // ++++++++++++++++++++++++++++++++++++++++++
 
 /*!
- * JavaScript for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
+ * JavaScript for SuperStrap's docs (https://getsuperstrap.com/)
+ * Copyright 2023 The SuperStrap Authors
  * Licensed under the Creative Commons Attribution 3.0 Unported License.
  * For details, see https://creativecommons.org/licenses/by/3.0/.
  */
 
-/* global bootstrap: false */
+/* global superstrap: false */
 
 (() => {
   'use strict'
@@ -22,7 +22,7 @@
   // Instantiate all tooltips in a docs or StackBlitz
   document.querySelectorAll('[data-bs-toggle="tooltip"]')
     .forEach(tooltip => {
-      new bootstrap.Tooltip(tooltip)
+      new superstrap.Tooltip(tooltip)
     })
 
   // --------
@@ -31,7 +31,7 @@
   // Instantiate all popovers in docs or StackBlitz
   document.querySelectorAll('[data-bs-toggle="popover"]')
     .forEach(popover => {
-      new bootstrap.Popover(popover)
+      new superstrap.Popover(popover)
     })
 
   // -------------------------------
@@ -52,7 +52,7 @@
   // Instantiate all toasts in docs pages only
   document.querySelectorAll('.bd-example .toast')
     .forEach(toastNode => {
-      const toast = new bootstrap.Toast(toastNode, {
+      const toast = new superstrap.Toast(toastNode, {
         autohide: false
       })
 
@@ -65,7 +65,7 @@
   const toastLiveExample = document.getElementById('liveToast')
 
   if (toastTrigger) {
-    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    const toastBootstrap = superstrap.Toast.getOrCreateInstance(toastLiveExample)
     toastTrigger.addEventListener('click', () => {
       toastBootstrap.show()
     })
@@ -105,7 +105,7 @@
   // Instantiate all non-autoplaying carousels in docs or StackBlitz
   document.querySelectorAll('.carousel:not([data-bs-ride="carousel"])')
     .forEach(carousel => {
-      bootstrap.Carousel.getOrCreateInstance(carousel)
+      superstrap.Carousel.getOrCreateInstance(carousel)
     })
 
   // -------------------------------

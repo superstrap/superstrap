@@ -1,7 +1,7 @@
 /*!
-  * Bootstrap sanitizer.js v5.3.0-alpha3 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  * SuperStrap sanitizer.js v5.3.0-alpha3 (https://superstrap.gabrieltoy1.repl.co/)
+  * Copyright 2023 The SuperStrap Authors (https://github.com/superstrap/superstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -11,8 +11,8 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap util/sanitizer.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * SuperStrap util/sanitizer.js
+   * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 

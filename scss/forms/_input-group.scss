@@ -8,7 +8,12 @@
   flex-wrap: wrap; // For form validation feedback
   align-items: stretch;
   width: 100%;
+  &:nth-child(n) {
+    box-shadow: none !important;
+  }
 
+  box-shadow: var(--#{$prefix}box-shadow);
+  
   > .form-control,
   > .form-select,
   > .form-floating {

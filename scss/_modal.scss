@@ -41,12 +41,11 @@
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+
   // Prevent Chrome on Windows from adding a focus outline. For details, see
-  // https://github.com/twbs/bootstrap/pull/10951.
   outline: 0;
   // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
   // gnarly iOS Safari bug: https://bugs.webkit.org/show_bug.cgi?id=158342
-  // See also https://github.com/twbs/bootstrap/issues/17695
 }
 
 // Shell div to position the modal with bottom padding
@@ -101,6 +100,7 @@
   color: var(--#{$prefix}modal-color);
   pointer-events: auto;
   background-color: var(--#{$prefix}modal-bg);
+  backdrop-filter: blur(30px) saturate(200%);
   background-clip: padding-box;
   border: var(--#{$prefix}modal-border-width) solid var(--#{$prefix}modal-border-color);
   @include border-radius(var(--#{$prefix}modal-border-radius));
@@ -115,6 +115,7 @@
   --#{$prefix}backdrop-zindex: #{$zindex-modal-backdrop};
   --#{$prefix}backdrop-bg: #{$modal-backdrop-bg};
   --#{$prefix}backdrop-opacity: #{$modal-backdrop-opacity};
+  backdrop-filter: blur(30px) saturate(100%);
   // scss-docs-end modal-backdrop-css-vars
 
   @include overlay-backdrop(var(--#{$prefix}backdrop-zindex), var(--#{$prefix}backdrop-bg), var(--#{$prefix}backdrop-opacity));
@@ -166,8 +167,7 @@
   @include border-bottom-radius(var(--#{$prefix}modal-inner-border-radius));
 
   // Place margin between footer elements
-  // This solution is far from ideal because of the universal selector usage,
-  // but is needed to fix https://github.com/twbs/bootstrap/issues/24800
+  // This solution is far from ideal because of the universal selector usage
   > * {
     margin: calc(var(--#{$prefix}modal-footer-gap) * .5); // Todo in v6: replace with gap on parent class
   }

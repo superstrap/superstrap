@@ -3,8 +3,8 @@
 /*!
  * Script to create the built examples zip archive;
  * requires the `zip` command to be present!
- * Copyright 2020-2023 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Copyright 2023 The superStrap Authors
+ * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
  */
 
 'use strict'
@@ -15,24 +15,24 @@ const sh = require('shelljs')
 const pkg = require('../package.json')
 
 const versionShort = pkg.config.version_short
-const distFolder = `bootstrap-${pkg.version}-examples`
+const distFolder = `superstrap-${pkg.version}-examples`
 const rootDocsDir = '_site'
 const docsDir = `${rootDocsDir}/docs/${versionShort}/`
 
 // these are the files we need in the examples
 const cssFiles = [
-  'bootstrap.min.css',
-  'bootstrap.min.css.map',
-  'bootstrap.rtl.min.css',
-  'bootstrap.rtl.min.css.map'
+  'superstrap.min.css',
+  'superstrap.min.css.map',
+  'superstrap.rtl.min.css',
+  'superstrap.rtl.min.css.map'
 ]
 const jsFiles = [
-  'bootstrap.bundle.min.js',
-  'bootstrap.bundle.min.js.map'
+  'superstrap.bundle.min.js',
+  'superstrap.bundle.min.js.map'
 ]
 const imgFiles = [
-  'bootstrap-logo.svg',
-  'bootstrap-logo-white.svg'
+  'superstrap-logo.svg',
+  'superstrap-logo-white.svg'
 ]
 
 sh.config.fatal = true

@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap carousel.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap carousel.js
+ * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 

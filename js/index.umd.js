@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------
- * Bootstrap index.umd.js
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * SuperStrap index.umd.js
+ * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
  * --------------------------------------------------------------------------
  */
 

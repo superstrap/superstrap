@@ -1,7 +1,7 @@
 /*!
-  * Bootstrap selector-engine.js v5.3.0-alpha3 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  * SuperStrap selector-engine.js v5.3.0-alpha3 (https://superstrap.gabrieltoy1.repl.co/)
+  * Copyright 2023 The SuperStrap Authors (https://github.com/superstrap/superstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('../util/index.js')) :
@@ -11,8 +11,8 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap dom/selector-engine.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * SuperStrap dom/selector-engine.js
+   * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
   const getSelector = element => {
@@ -23,7 +23,6 @@
       // The only valid content that could double as a selector are IDs or classes,
       // so everything starting with `#` or `.`. If a "real" URL is used as the selector,
       // `document.querySelector` will rightfully complain it is invalid.
-      // See https://github.com/twbs/bootstrap/issues/32273
       if (!hrefAttribute || !hrefAttribute.includes('#') && !hrefAttribute.startsWith('.')) {
         return null;
       }

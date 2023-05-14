@@ -66,12 +66,11 @@
   --#{$prefix}nav-tabs-link-active-border-color: #{$nav-tabs-link-active-border-color};
   // scss-docs-end nav-tabs-css-vars
 
-  border-bottom: var(--#{$prefix}nav-tabs-border-width) solid var(--#{$prefix}nav-tabs-border-color);
 
   .nav-link {
     margin-bottom: calc(-1 * var(--#{$prefix}nav-tabs-border-width)); // stylelint-disable-line function-disallowed-list
     border: var(--#{$prefix}nav-tabs-border-width) solid transparent;
-    @include border-top-radius(var(--#{$prefix}nav-tabs-border-radius));
+    @include border-radius(var(--#{$prefix}nav-tabs-border-radius));
 
     &:hover,
     &:focus {

@@ -4,14 +4,14 @@
 
 .bd-code-snippet {
   margin: 0 ($bd-gutter-x * -.5) 1rem;
-  border: solid var(--bs-border-color);
+  border: solid var(--strap-border-color);
   border-width: 1px 0;
 
   @include media-breakpoint-up(md) {
     margin-right: 0;
     margin-left: 0;
     border-width: 1px;
-    @include border-radius(var(--bs-border-radius));
+    @include border-radius(var(--strap-border-radius));
   }
 }
 
@@ -21,7 +21,7 @@
   position: relative;
   padding: var(--bd-example-padding);
   margin: 0 ($bd-gutter-x * -.5) 1rem;
-  border: solid var(--bs-border-color);
+  border: solid var(--strap-border-color);
   border-width: 1px 0;
   @include clearfix();
 
@@ -31,7 +31,7 @@
     margin-right: 0;
     margin-left: 0;
     border-width: 1px;
-    @include border-radius(var(--bs-border-radius));
+    @include border-radius(var(--strap-border-radius));
   }
 
   + p {
@@ -176,9 +176,9 @@
   .ratio {
     display: inline-block;
     width: 10rem;
-    color: var(--bs-secondary-color);
-    background-color: var(--bs-tertiary-bg);
-    border: var(--bs-border-width) solid var(--bs-border-color);
+    color: var(--strap-secondary-color);
+    background-color: var(--strap-tertiary-bg);
+    border: var(--strap-border-width) solid var(--strap-border-color);
 
     > div {
       display: flex;
@@ -192,7 +192,7 @@
     width: 16rem;
 
     @include media-breakpoint-up(md) {
-      --bs-aspect-ratio: 50%; // 2x1
+      --strap-aspect-ratio: 50%; // 2x1
     }
   }
 }
@@ -220,18 +220,18 @@
 
 // scss-docs-start custom-tooltip
 .custom-tooltip {
-  --bs-tooltip-bg: var(--bs-primary);
+  --strap-tooltip-bg: var(--strap-primary);
 }
 // scss-docs-end custom-tooltip
 
 // scss-docs-start custom-popovers
 .custom-popover {
-  --bs-popover-max-width: 200px;
-  --bs-popover-border-color: var(--bs-primary);
-  --bs-popover-header-bg: var(--bs-primary);
-  --bs-popover-header-color: var(--bs-white);
-  --bs-popover-body-padding-x: 1rem;
-  --bs-popover-body-padding-y: .5rem;
+  --strap-popover-max-width: 200px;
+  --strap-popover-border-color: var(--strap-primary);
+  --strap-popover-header-bg: var(--strap-primary);
+  --strap-popover-header-color: var(--strap-white);
+  --strap-popover-body-padding-x: 1rem;
+  --strap-popover-body-padding-y: .5rem;
 }
 // scss-docs-end custom-popovers
 
@@ -259,7 +259,7 @@
     width: 5rem;
     height: 5rem;
     margin: .25rem;
-    background-color: var(--bs-tertiary-bg);
+    background-color: var(--strap-tertiary-bg);
   }
 }
 
@@ -275,13 +275,13 @@
 
   .position-relative {
     height: 200px;
-    background-color: var(--bs-tertiary-bg);
+    background-color: var(--strap-tertiary-bg);
   }
 
   .position-absolute {
     width: 2rem;
     height: 2rem;
-    background-color: var(--bs-body-color);
+    background-color: var(--strap-body-color);
     @include border-radius();
   }
 }
@@ -312,7 +312,7 @@
   min-height: 15rem;
 
   > div {
-    color: var(--bs-body-bg);
+    color: var(--strap-body-bg);
     background-color: var(--bd-violet);
     border: 1px solid var(--bd-purple);
 
@@ -352,7 +352,7 @@
 
   @include media-breakpoint-up(md) {
     padding: .75rem 1.25rem;
-    @include border-radius(calc(var(--bs-border-radius) - 1px));
+    @include border-radius(calc(var(--strap-border-radius) - 1px));
   }
 
   @include media-breakpoint-up(lg) {
@@ -373,7 +373,7 @@
 
   pre code {
     @include font-size(inherit);
-    color: var(--bs-body-color); // Effectively the base text color
+    color: var(--strap-body-color); // Effectively the base text color
     word-wrap: normal;
   }
 }
@@ -389,7 +389,7 @@
 .bd-file-ref {
   .highlight-toolbar {
     @include media-breakpoint-up(md) {
-      @include border-top-radius(calc(var(--bs-border-radius) - 1px));
+      @include border-top-radius(calc(var(--strap-border-radius) - 1px));
     }
   }
 }

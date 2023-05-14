@@ -57,16 +57,16 @@
   }
 
   @include media-breakpoint-down(md) {
-    color: var(--bs-body-color);
-    border: 1px solid var(--bs-border-color);
-    @include border-radius(var(--bs-border-radius));
+    color: var(--strap-body-color);
+    border: 1px solid var(--strap-border-color);
+    @include border-radius(var(--strap-border-radius));
 
     &:hover,
     &:focus,
     &:active,
     &[aria-expanded="true"] {
       color: var(--bd-violet);
-      background-color: var(--bs-body-bg);
+      background-color: var(--strap-body-bg);
       border-color: var(--bd-violet);
     }
 
@@ -81,9 +81,9 @@
   @include media-breakpoint-down(md) {
     nav {
       padding: 1.25rem 1.25rem 1.25rem 1rem;
-      background-color: var(--bs-tertiary-bg);
-      border: 1px solid var(--bs-border-color);
-      @include border-radius(var(--bs-border-radius));
+      background-color: var(--strap-tertiary-bg);
+      border: 1px solid var(--strap-border-color);
+      @include border-radius(var(--strap-border-radius));
     }
   }
 

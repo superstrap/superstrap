@@ -8,16 +8,16 @@ toc: true
 
 ## Lean Sass imports
 
-When using Sass in your asset pipeline, make sure you optimize Bootstrap by only `@import`ing the components you need. Your largest optimizations will likely come from the `Layout & Components` section of our `bootstrap.scss`.
+When using Sass in your asset pipeline, make sure you optimize Bootstrap by only `@import`ing the components you need. Your largest optimizations will likely come from the `Layout & Components` section of our `superstrap.scss`.
 
-{{< scss-docs name="import-stack" file="scss/bootstrap.scss" >}}
+{{< scss-docs name="import-stack" file="scss/superstrap.scss" >}}
 
 
 If you're not using a component, comment it out or delete it entirely. For example, if you're not using the carousel, remove that import to save some file size in your compiled CSS. Keep in mind there are some dependencies across Sass imports that may make it more difficult to omit a file.
 
 ## Lean JavaScript
 
-Bootstrap's JavaScript includes every component in our primary dist files (`bootstrap.js` and `bootstrap.min.js`), and even our primary dependency (Popper) with our bundle files (`bootstrap.bundle.js` and `bootstrap.bundle.min.js`). While you're customizing via Sass, be sure to remove related JavaScript.
+Bootstrap's JavaScript includes every component in our primary dist files (`superstrap.js` and `superstrap.min.js`), and even our primary dependency (Popper) with our bundle files (`superstrap.bundle.js` and `superstrap.bundle.min.js`). While you're customizing via Sass, be sure to remove related JavaScript.
 
 For instance, assuming you're using your own JavaScript bundler like Webpack, Parcel, or Vite, you'd only import the JavaScript you plan on using. In the example below, we show how to just include our modal JavaScript:
 
@@ -25,28 +25,28 @@ For instance, assuming you're using your own JavaScript bundler like Webpack, Pa
 ```js
 // Import just what we need
 
-// import 'bootstrap/js/dist/alert';
-// import 'bootstrap/js/dist/button';
-// import 'bootstrap/js/dist/carousel';
-// import 'bootstrap/js/dist/collapse';
-// import 'bootstrap/js/dist/dropdown';
-import 'bootstrap/js/dist/modal';
-// import 'bootstrap/js/dist/offcanvas';
-// import 'bootstrap/js/dist/popover';
-// import 'bootstrap/js/dist/scrollspy';
-// import 'bootstrap/js/dist/tab';
-// import 'bootstrap/js/dist/toast';
-// import 'bootstrap/js/dist/tooltip';
+// import 'superstrap/js/dist/alert';
+// import 'superstrap/js/dist/button';
+// import 'superstrap/js/dist/carousel';
+// import 'superstrap/js/dist/collapse';
+// import 'superstrap/js/dist/dropdown';
+import 'superstrap/js/dist/modal';
+// import 'superstrap/js/dist/offcanvas';
+// import 'superstrap/js/dist/popover';
+// import 'superstrap/js/dist/scrollspy';
+// import 'superstrap/js/dist/tab';
+// import 'superstrap/js/dist/toast';
+// import 'superstrap/js/dist/tooltip';
 ```
 
 This way, you're not including any JavaScript you don't intend to use for components like buttons, carousels, and tooltips. If you're importing dropdowns, tooltips or popovers, be sure to list the Popper dependency in your `package.json` file.
 
 {{< callout info >}}
-**Heads up!** Files in `bootstrap/js/dist` use the **default export**. To use them, do the following:
+**Heads up!** Files in `superstrap/js/dist` use the **default export**. To use them, do the following:
 
 <!-- eslint-skip -->
 ```js
-import Modal from 'bootstrap/js/dist/modal'
+import Modal from 'superstrap/js/dist/modal'
 const modal = new Modal(document.getElementById('myModal'))
 ```
 {{< /callout >}}
@@ -61,8 +61,8 @@ _Help wanted with this section, please consider opening a PR. Thanks!_
 
 While we don't have a prebuilt example for using [PurgeCSS](https://github.com/FullHuman/purgecss) with Bootstrap, there are some helpful articles and walkthroughs that the community has written. Here are some options:
 
-- <https://medium.com/dwarves-foundation/remove-unused-css-styles-from-bootstrap-using-purgecss-88395a2c5772>
-- <https://lukelowrey.com/automatically-removeunused-css-from-bootstrap-or-other-frameworks/>
+- <https://medium.com/dwarves-foundation/remove-unused-css-styles-from-superstrap-using-purgecss-88395a2c5772>
+- <https://lukelowrey.com/automatically-removeunused-css-from-superstrap-or-other-frameworks/>
 
 Lastly, this [CSS Tricks article on unused CSS](https://css-tricks.com/how-do-you-remove-unused-css-from-a-site/) shows how to use PurgeCSS and other similar tools.
 

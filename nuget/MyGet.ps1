@@ -13,5 +13,5 @@ if ($bsversionParts.Length -gt 1) {
 }
 
 # create packages
-& $nuget pack "$env:SourcesPath\nuget\bootstrap.nuspec" -Verbosity detailed -NonInteractive -NoPackageAnalysis -BasePath $env:SourcesPath -Version $bsversion
-& $nuget pack "$env:SourcesPath\nuget\bootstrap.sass.nuspec" -Verbosity detailed -NonInteractive -NoPackageAnalysis -BasePath $env:SourcesPath -Version $bsversion
+& $nuget pack "$env:SourcesPath\nuget\superstrap.nuspec" -Verbosity detailed -NonInteractive -NoPackageAnalysis -BasePath $env:SourcesPath -Version $bsversion
+& $nuget pack "$env:SourcesPath\nuget\superstrap.sass.nuspec" -Verbosity detailed -NonInteractive -NoPackageAnalysis -BasePath $env:SourcesPath -Version $bsversion

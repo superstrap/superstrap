@@ -28,7 +28,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+  min-width: 0;
   height: var(--#{$prefix}card-height);
   color: var(--#{$prefix}body-color);
   word-wrap: break-word;
@@ -109,6 +109,7 @@
   color: var(--#{$prefix}card-cap-color);
   background-color: var(--#{$prefix}card-cap-bg);
   border-bottom: var(--#{$prefix}card-border-width) solid var(--#{$prefix}card-border-color);
+  font-size: 13px;
 
   &:first-child {
     @include border-radius(var(--#{$prefix}card-inner-border-radius) var(--#{$prefix}card-inner-border-radius) 0 0);

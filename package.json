@@ -1,9 +1,9 @@
 {
-  "name": "bootstrap",
+  "name": "superstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "version": "5.3.0-alpha3",
+  "version": "1.1.0",
   "config": {
-    "version_short": "5.3"
+    "version_short": "1.1"
   },
   "keywords": [
     "css",
@@ -14,30 +14,20 @@
     "framework",
     "web"
   ],
-  "homepage": "https://getbootstrap.com/",
-  "author": "The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)",
+  "homepage": "https://superstrap.gabrieltoy1.repl.co/",
+  "author": "The SuperStrap Authors (https://github.com/superstrap/superstrap/graphs/contributors)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twbs/bootstrap.git"
+    "url": "git+https://github.com/superstrap/superstrap.git"
   },
   "bugs": {
-    "url": "https://github.com/twbs/bootstrap/issues"
+    "url": "https://github.com/twbs/superstrap/issues"
   },
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/twbs"
-    },
-    {
-      "type": "opencollective",
-      "url": "https://opencollective.com/bootstrap"
-    }
-  ],
-  "main": "dist/js/bootstrap.js",
-  "module": "dist/js/bootstrap.esm.js",
-  "sass": "scss/bootstrap.scss",
-  "style": "dist/css/bootstrap.css",
+  "main": "dist/js/superstrap.js",
+  "module": "dist/js/superstrap.esm.js",
+  "sass": "scss/superstrap.scss",
+  "style": "dist/css/superstrap.css",
   "scripts": {
     "start": "npm-run-all --parallel watch docs-serve",
     "run": "npm-run-all docs-build docs-serve",
@@ -64,9 +54,9 @@
     "js-compile-plugins": "node build/build-plugins.js",
     "js-lint": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives --ext .html,.js,.md .",
     "js-minify": "npm-run-all --aggregate-output --parallel js-minify-*",
-    "js-minify-standalone": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap.js.map,includeSources,url=bootstrap.min.js.map\" --output dist/js/bootstrap.min.js dist/js/bootstrap.js",
-    "js-minify-standalone-esm": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap.esm.js.map,includeSources,url=bootstrap.esm.min.js.map\" --output dist/js/bootstrap.esm.min.js dist/js/bootstrap.esm.js",
-    "js-minify-bundle": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap.bundle.js.map,includeSources,url=bootstrap.bundle.min.js.map\" --output dist/js/bootstrap.bundle.min.js dist/js/bootstrap.bundle.js",
+    "js-minify-standalone": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/superstrap.js.map,includeSources,url=superstrap.min.js.map\" --output dist/js/superstrap.min.js dist/js/superstrap.js",
+    "js-minify-standalone-esm": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/superstrap.esm.js.map,includeSources,url=superstrap.esm.min.js.map\" --output dist/js/superstrap.esm.min.js dist/js/superstrap.esm.js",
+    "js-minify-bundle": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/superstrap.bundle.js.map,includeSources,url=superstrap.bundle.min.js.map\" --output dist/js/superstrap.bundle.min.js dist/js/superstrap.bundle.js",
     "js-test": "npm-run-all --aggregate-output --parallel js-test-karma js-test-jquery js-test-integration-*",
     "js-debug": "cross-env DEBUG=true npm run js-test-karma",
     "js-test-karma": "karma start js/tests/karma.conf.js",
@@ -87,7 +77,7 @@
     "release": "npm-run-all dist release-sri docs-build release-zip*",
     "release-sri": "node build/generate-sri.js",
     "release-version": "node build/change-version.js",
-    "release-zip": "cross-env-shell \"rm -rf bootstrap-$npm_package_version-dist bootstrap-$npm_package_version-dist.zip && cp -r dist/ bootstrap-$npm_package_version-dist && zip -qr9 bootstrap-$npm_package_version-dist.zip bootstrap-$npm_package_version-dist && rm -rf bootstrap-$npm_package_version-dist\"",
+    "release-zip": "cross-env-shell \"rm -rf superstrap-$npm_package_version-dist superstrap-$npm_package_version-dist.zip && cp -r dist/ superstrap-$npm_package_version-dist && zip -qr9 superstrap-$npm_package_version-dist.zip superstrap-$npm_package_version-dist && rm -rf superstrap-$npm_package_version-dist\"",
     "release-zip-examples": "node build/zip-examples.js",
     "dist": "npm-run-all --aggregate-output --parallel css js",
     "test": "npm-run-all lint dist js-test docs-build docs-lint",
@@ -166,12 +156,12 @@
   },
   "jspm": {
     "registry": "npm",
-    "main": "js/bootstrap",
+    "main": "js/superstrap",
     "directories": {
       "lib": "dist"
     },
     "shim": {
-      "js/bootstrap": {
+      "js/superstrap": {
         "deps": [
           "@popperjs/core"
         ]

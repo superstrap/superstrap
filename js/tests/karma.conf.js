@@ -91,7 +91,7 @@ const config = {
     ],
     output: {
       format: 'iife',
-      name: 'bootstrapTest',
+      name: 'superstrapTest',
       sourcemap: 'inline',
       generatedCode: 'es2015'
     }
@@ -103,8 +103,8 @@ if (BROWSERSTACK) {
   config.browserStack = {
     username: ENV.BROWSER_STACK_USERNAME,
     accessKey: ENV.BROWSER_STACK_ACCESS_KEY,
-    build: `bootstrap-${ENV.GITHUB_SHA ? `${ENV.GITHUB_SHA.slice(0, 7)}-` : ''}${new Date().toISOString()}`,
-    project: 'Bootstrap',
+    build: `superstrap-${ENV.GITHUB_SHA ? `${ENV.GITHUB_SHA.slice(0, 7)}-` : ''}${new Date().toISOString()}`,
+    project: 'superStrap',
     retryLimit: 2
   }
   plugins.push('karma-browserstack-launcher', 'karma-jasmine-html-reporter')

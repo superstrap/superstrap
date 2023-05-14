@@ -5,8 +5,8 @@
  * Remember to use the same vendor files as the CDN ones,
  * otherwise the hashes won't match!
  *
- * Copyright 2017-2023 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Copyright 2023 The superStrap Authors
+ * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
  */
 
 'use strict'

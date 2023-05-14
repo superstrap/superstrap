@@ -1,7 +1,7 @@
 /*!
-  * Bootstrap event-handler.js v5.3.0-alpha3 (https://getbootstrap.com/)
-  * Copyright 2011-2023 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  * SuperStrap event-handler.js v5.3.0-alpha3 (https://superstrap.gabrieltoy1.repl.co/)
+  * Copyright 2023 The SuperStrap Authors (https://github.com/superstrap/superstrap/graphs/contributors)
+  * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('../util/index.js')) :
@@ -11,8 +11,8 @@
 
   /**
    * --------------------------------------------------------------------------
-   * Bootstrap dom/event-handler.js
-   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+   * SuperStrap dom/event-handler.js
+   * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
    * --------------------------------------------------------------------------
    */
 
@@ -44,7 +44,7 @@
     eventRegistry[uid] = eventRegistry[uid] || {};
     return eventRegistry[uid];
   }
-  function bootstrapHandler(element, fn) {
+  function superstrapHandler(element, fn) {
     return function handler(event) {
       hydrateObj(event, {
         delegateTarget: element
@@ -55,7 +55,7 @@
       return fn.apply(element, [event]);
     };
   }
-  function bootstrapDelegationHandler(element, selector, fn) {
+  function superstrapDelegationHandler(element, selector, fn) {
     return function handler(event) {
       const domElements = element.querySelectorAll(selector);
       for (let {
@@ -115,7 +115,7 @@
       return;
     }
     const uid = makeEventUid(callable, originalTypeEvent.replace(namespaceRegex, ''));
-    const fn = isDelegated ? bootstrapDelegationHandler(element, handler, callable) : bootstrapHandler(element, callable);
+    const fn = isDelegated ? superstrapDelegationHandler(element, handler, callable) : superstrapHandler(element, callable);
     fn.delegationSelector = isDelegated ? handler : null;
     fn.callable = callable;
     fn.oneOff = oneOff;

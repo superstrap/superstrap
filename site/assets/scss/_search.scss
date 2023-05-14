@@ -44,7 +44,7 @@
 }
 
 .DocSearch-Container {
-  --docsearch-muted-color: var(--bs-secondary-color);
+  --docsearch-muted-color: var(--strap-secondary-color);
   --docsearch-hit-shadow: none;
 
   z-index: 2000; // Make sure to be over all components showcased in the documentation
@@ -132,7 +132,7 @@
 }
 
 .DocSearch-Form {
-  @include border-radius(var(--bs-border-radius));
+  @include border-radius(var(--strap-border-radius));
 }
 
 .DocSearch-Hits {
@@ -147,16 +147,16 @@
 
   a {
     @include border-radius(0);
-    border: solid var(--bs-border-color);
+    border: solid var(--strap-border-color);
     border-width: 0 1px 1px;
   }
 
   &:first-child a {
-    @include border-top-radius(var(--bs-border-radius));
+    @include border-top-radius(var(--strap-border-radius));
     border-top-width: 1px;
   }
   &:last-child a {
-    @include border-bottom-radius(var(--bs-border-radius));
+    @include border-bottom-radius(var(--strap-border-radius));
   }
 }
 
