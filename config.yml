@@ -1,5 +1,5 @@
 languageCode:           "en"
-title:                  "Bootstrap"
+title:                  "SuperStrap"
 baseURL:                "https://bootstrap-2.gabrieltoy1.repl.co"
 
 security:
@@ -49,7 +49,7 @@ module:
 
 params:
   subtitle:             "The most popular HTML, CSS, and JS library in the world."
-  description:          "Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."
+  description:          "SuperStrap is a supercharged CSS library that lets you build and customize stunning web applications. With powerful JavaScript plugins, a prebuilt grid system, and customizable Sass, SuperStrap is perfect for web developers looking for a feature-packed toolkit. Bring your web projects to life with SuperStrap today!"
   authors:              "Mark Otto, Jacob Thornton, and Bootstrap contributors"
 
   current_version:      "5.3.0-alpha3"

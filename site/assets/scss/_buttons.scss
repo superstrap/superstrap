@@ -46,7 +46,7 @@
 }
 
 .bd-btn-lg {
-  --strap-btn-border-radius: .5rem;
+  --strap-btn-border-radius: var(--strap-border-radius-lg);
 
   padding: .8125rem 2rem;
 }

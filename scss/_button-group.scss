@@ -5,7 +5,7 @@
   display: inline-flex;
   vertical-align: middle; // match .btn alignment given font-size hack above
   @include border-radius($btn-border-radius);
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.29);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.29);
 
   > .btn {
     position: relative;

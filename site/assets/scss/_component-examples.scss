@@ -11,7 +11,7 @@
     margin-right: 0;
     margin-left: 0;
     border-width: 1px;
-    @include border-radius(var(--strap-border-radius));
+    @include border-radius(var(--strap-border-radius-lg));
   }
 }
 
@@ -31,7 +31,7 @@
     margin-right: 0;
     margin-left: 0;
     border-width: 1px;
-    @include border-radius(var(--strap-border-radius));
+    @include border-radius(var(--strap-border-radius-lg));
   }
 
   + p {

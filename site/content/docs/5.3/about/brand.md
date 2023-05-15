@@ -6,7 +6,7 @@ group: about
 toc: true
 ---
 
-Have a need for Bootstrap's brand resources? Great! We have only a few guidelines we follow, and in turn ask you to follow as well.
+Have a need for superStrap's brand resources? Great! We have only a few guidelines we follow, and in turn ask you to follow as well.
 
 ## Logo
 
