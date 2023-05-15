@@ -31,7 +31,7 @@ publishDir:             "_site"
 module:
   mounts:
     - source:           dist
-      target:           static/docs/5.3/dist
+      target:           static/docs/0.1/dist
     - source:           site/assets
       target:           assets
     - source:           site/content
@@ -42,9 +42,9 @@ module:
       target:           layouts
     - source:           site/static
       target:           static
-    - source:           site/static/docs/5.3/assets/img/favicons/apple-touch-icon.png
+    - source:           site/static/docs/0.1/assets/img/favicons/apple-touch-icon.png
       target:           static/apple-touch-icon.png
-    - source:           site/static/docs/5.3/assets/img/favicons/favicon.ico
+    - source:           site/static/docs/0.1/assets/img/favicons/favicon.ico
       target:           static/favicon.ico
 
 params:
@@ -52,12 +52,12 @@ params:
   description:          "SuperStrap is a supercharged CSS library that lets you build and customize stunning web applications. With powerful JavaScript plugins, a prebuilt grid system, and customizable Sass, SuperStrap is perfect for web developers looking for a feature-packed toolkit. Bring your web projects to life with SuperStrap today!"
   authors:              "Mark Otto, Jacob Thornton, and Bootstrap contributors"
 
-  current_version:      "5.3.0-alpha3"
-  current_ruby_version: "5.3.0.alpha3"
-  docs_version:         "5.3"
+  current_version:      "0.1.0.beta1"
+  current_ruby_version: "0.1.0.beta1"
+  docs_version:         "0.1"
   rfs_version:          "v10.0.0"
-  github_org:           "https://github.com/twbs"
-  repo:                 "https://github.com/twbs/bootstrap"
+  github_org:           "https://github.com/superstrap"
+  repo:                 "https://github.com/superstrap/bootstrap"
   twitter:              "getbootstrap"
   opencollective:       "https://opencollective.com/bootstrap"
   blog:                 "https://blog.getbootstrap.com/"
@@ -66,9 +66,9 @@ params:
   swag:                 "https://cottonbureau.com/people/bootstrap"
 
   download:
-    source:             "https://github.com/twbs/bootstrap/archive/v5.3.0-alpha3.zip"
-    dist:               "https://github.com/twbs/bootstrap/releases/download/v5.3.0-alpha3/bootstrap-5.3.0-alpha3-dist.zip"
-    dist_examples:      "https://github.com/twbs/bootstrap/releases/download/v5.3.0-alpha3/bootstrap-5.3.0-alpha3-examples.zip"
+    source:             "https://github.com/superstrap/bootstrap/archive/v5.3.0-alpha3.zip"
+    dist:               "https://github.com/superstrap/superstrap/releases/download/v5.3.0-alpha3/bootstrap-5.3.0-alpha3-dist.zip"
+    dist_examples:      "https://github.com/superstrap/superstrap/releases/download/v5.3.0-alpha3/bootstrap-5.3.0-alpha3-examples.zip"
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
