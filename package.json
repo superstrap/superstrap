@@ -71,7 +71,7 @@
     "docs-compile": "npm run docs-build",
     "docs-vnu": "node build/vnu-jar.js",
     "docs-lint": "npm run docs-vnu",
-    "docs-serve": "hugo server --bind localhost --port 443 --baseURL https://bootstrap-2.gabrieltoy1.repl.co --disableFastRender --printUnusedTemplates",
+    "docs-serve": "hugo server --bind 0.0.0.0 --port 443 --baseURL https://bootstrap-2.gabrieltoy1.repl.co --disableFastRender --printUnusedTemplates",
     "docs-serve-only": "npx sirv-cli _site --bind 0.0.0.0 --port 443 --baseURL https://bootstrap-2.gabrieltoy1.repl.co",
     "lockfile-lint": "lockfile-lint --allowed-hosts npm --allowed-schemes https: --empty-hostname false --type npm --path package-lock.json",
     "update-deps": "ncu -u -x globby,karma-browserstack-launcher,karma-rollup-preprocessor,terser && echo Manually update site/assets/js/vendor",
