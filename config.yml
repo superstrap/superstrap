@@ -1,5 +1,6 @@
 languageCode:           "en"
 title:                  "SuperStrap"
+lowercaseTitle:         "superstrap"
 baseURL:                "https://bootstrap-2.gabrieltoy1.repl.co"
 
 security:
