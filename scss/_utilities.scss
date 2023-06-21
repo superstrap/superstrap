@@ -10,6 +10,17 @@ $utilities: map-merge(
       class: align,
       values: baseline top middle bottom text-bottom text-top
     ),
+    "background-blur": (
+      property: (backdrop-filter,-webkit-backdrop-filter),
+      class: bg-blur,
+      values: (
+        1: blur(1px),
+        2: blur(5px),
+        3: blur(10px),
+        4: blur(30px),
+        5: blur(50px)
+      )
+    ),
     // scss-docs-end utils-vertical-align
     // scss-docs-start utils-float
     "float": (
