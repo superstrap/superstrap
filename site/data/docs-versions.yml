@@ -1,6 +1,6 @@
-- group: v1.x
-  baseurl: "https://bootstrap-2.gabrieltoy1.repl.co/docs"
-  description: "Every minor and patch release from v1 is listed below."
+- group: v0.x
+  baseurl: "https://superstrap.gabrieltoy1.repl.co/docs"
+  description: "Every minor and patch release from v0(beta) is listed below."
   versions:
-    - "1.0"
-    - "1.1"
+    - "0.0"
+    - "0.1"

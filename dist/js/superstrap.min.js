@@ -1,5 +1,5 @@
 /*!
-  * SuperStrap v5.3.0-alpha3 (https://superstrap.gabrieltoy1.repl.co/)
+  * SuperStrap v1.0.0 (https://superstrap.gabrieltoy1.repl.co/)
   * Copyright 2023 The SuperStrap Authors (https://github.com/superstrap/superstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
   */

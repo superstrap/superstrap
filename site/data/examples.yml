@@ -1,39 +1,39 @@
 - category: Starters
   external: true
-  description: "Functional examples of using Bootstrap in common JS frameworks like Webpack, Parcel, Vite, and more you can edit in StackBlitz."
+  description: "Functional examples of using SuperStrap in common JS frameworks like Webpack, Parcel, Vite, and more you can edit in StackBlitz."
   examples:
     - name: CDN starter
-      description: "Instantly include Bootstrap's compiled CSS and JavaScript via the jsDelivr CDN."
+      description: "Instantly include SuperStrap's compiled CSS and JavaScript via the jsDelivr CDN."
       url: /examples/tree/main/starter
     - name: Sass & JS
-      description: "Use npm to import and compile Bootstrap's Sass with Autoprefixer and Stylelint, plus our bundled JavaScript."
+      description: "Use npm to import and compile SuperStrap's Sass with Autoprefixer and Stylelint, plus our bundled JavaScript."
       url: /examples/tree/main/sass-js
     - name: Sass & ESM JS
-      description: "Import and compile Bootstrap's Sass with Autoprefixer and Stylelint, and compile our source JavaScript with an ESM shim."
+      description: "Import and compile SuperStrap's Sass with Autoprefixer and Stylelint, and compile our source JavaScript with an ESM shim."
       url: /examples/tree/main/sass-js-esm
-    - name: Bootstrap color modes
-      description: "Import and compile Bootstrap's Sass with Stylelint, and the Bootstrap color modes."
+    - name: SuperStrap color modes
+      description: "Import and compile SuperStrap's Sass with Stylelint, and the SuperStrap color modes."
       url: /examples/tree/main/color-modes
-    - name: Bootstrap Icons
-      description: "Import and compile Bootstrap's Sass with Stylelint, PurgeCSS, and the Bootstrap Icons web font."
+    - name: SuperStrap Icons
+      description: "Import and compile SuperStrap's Sass with Stylelint, PurgeCSS, and the SuperStrap Icons web font."
       url: /examples/tree/main/icons-font
     - name: Parcel
-      description: "Import and bundle Bootstrap's source Sass and JavaScript via Parcel."
+      description: "Import and bundle SuperStrap's source Sass and JavaScript via Parcel."
       url: /examples/tree/main/parcel
       indexPath: src/index.html
       indexPath: src/index.html
     - name: React
-      description: "Import and bundle Bootstrap's source Sass and JavaScript with React, Next.js, and React Bootstrap."
+      description: "Import and bundle SuperStrap's source Sass and JavaScript with React, Next.js, and React SuperStrap."
       url: /examples/tree/main/react-nextjs
       indexPath: src/pages/index.tsx
     - name: Vite
-      description: "Import and bundle Bootstrap's source Sass and JavaScript with Vite."
+      description: "Import and bundle SuperStrap's source Sass and JavaScript with Vite."
       url: /examples/tree/main/vite
     - name: Vue
-      description: "Import and bundle Bootstrap's source Sass and JavaScript with Vue and Vite."
+      description: "Import and bundle SuperStrap's source Sass and JavaScript with Vue and Vite."
       url: /examples/tree/main/vue
     - name: Webpack
-      description: "Import and bundle Bootstrap's source Sass and JavaScript with Webpack."
+      description: "Import and bundle SuperStrap's source Sass and JavaScript with Webpack."
       url: /examples/tree/main/webpack
       indexPath: src/index.html
 
@@ -63,10 +63,10 @@
     - name: Buttons
       description: "Create custom buttons for just about any use case with utilities."
     - name: Jumbotrons
-      description: "Create modernized versions of the classic Bootstrap component."
+      description: "Create modernized versions of the classic SuperStrap component."
 
 - category: Custom Components
-  description: "Brand-new components and templates to help folks quickly get started with Bootstrap and demonstrate best practices for adding onto the framework."
+  description: "Brand-new components and templates to help folks quickly get started with SuperStrap and demonstrate best practices for adding onto the framework."
   examples:
     - name: Album
       description: "Simple one-page template for photo galleries, portfolios, and more."
@@ -94,16 +94,16 @@
       description: "Use utilities to recreate and enhance Bootstrap 4's jumbotron."
 
 - category: Framework
-  description: "Examples that focus on implementing uses of built-in components provided by Bootstrap."
+  description: "Examples that focus on implementing uses of built-in components provided by SuperStrap."
   examples:
     - name: "Starter template"
       description: "Nothing but the basics: compiled CSS and JavaScript."
     - name: Grid
       description: "Multiple examples of grid layouts with all four tiers, nesting, and more."
     - name: Cheatsheet
-      description: "Kitchen sink of Bootstrap components."
+      description: "Kitchen sink of SuperStrap components."
     - name: Cheatsheet RTL
-      description: "Kitchen sink of Bootstrap components, RTL."
+      description: "Kitchen sink of SuperStrap components, RTL."
 
 - category: Navbars
   description: "Taking the default navbar component and showing how it can be moved, placed, and extended."
@@ -122,7 +122,7 @@
       description: "Turn your expandable navbar into a sliding offcanvas menu (doesn't use our offcanvas component)."
 
 - category: RTL
-  description: "See Bootstrap's RTL version in action with these modified Custom Components examples."
+  description: "See SuperStrap's RTL version in action with these modified Custom Components examples."
   examples:
     - name: Album RTL
       description: "Simple one-page template for photo galleries, portfolios, and more."
@@ -139,4 +139,4 @@
   description: "Integrations with external libraries."
   examples:
     - name: "Masonry"
-      description: "Combine the powers of the Bootstrap grid and the Masonry layout."
+      description: "Combine the powers of the SuperStrap grid and the Masonry layout."
