@@ -7,7 +7,7 @@
   },
   "publishConfig": {
      "@superstrap:registry": "https://npm.pkg.github.com"
-   }
+   },
   "keywords": [
     "css",
     "sass",
