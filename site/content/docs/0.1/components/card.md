@@ -1,18 +1,18 @@
 ---
 layout: docs
 title: Cards
-description: Bootstrap's cards provide a flexible and extensible content container with multiple variants and options.
+description: SuperStrap's cards provide a flexible and extensible content container with multiple variants and options.
 group: components
 toc: true
 ---
 
 ## About
 
-A **card** is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you're familiar with Bootstrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
+A **card** is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you're familiar with SuperStrap 3, cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
 
 ## Example
 
-Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no `margin` by default, so use [spacing utilities]({{< docsref "/utilities/spacing" >}}) as needed.
+Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other SuperStrap components. They have no `margin` by default, so use [spacing utilities]({{< docsref "/utilities/spacing" >}}) as needed.
 
 Below is an example of a basic card with mixed content and a fixed width. Cards have no fixed width to start, so they'll naturally fill the full width of its parent element. This is easily customized with our various [sizing options](#sizing).
 
@@ -296,7 +296,7 @@ You can quickly change the text alignment of any card—in its entirety or speci
 
 ## Navigation
 
-Add some navigation to a card's header (or block) with Bootstrap's [nav components]({{< docsref "/components/navs-tabs" >}}).
+Add some navigation to a card's header (or block) with SuperStrap's [nav components]({{< docsref "/components/navs-tabs" >}}).
 
 {{< example >}}
 <div class="card text-center">
@@ -417,8 +417,6 @@ Cards include various options for customizing their backgrounds, borders, and co
 
 ### Background and color
 
-{{< added-in "5.2.0" >}}
-
 Set a `background-color` with contrasting foreground `color` with [our `.text-bg-{color}` helpers]({{< docsref "helpers/color-background" >}}). Previously it was required to manually pair your choice of [`.text-{color}`]({{< docsref "/utilities/colors" >}}) and [`.bg-{color}`]({{< docsref "/utilities/background" >}}) utilities for styling, which you still may use if you prefer.
 
 {{< example >}}
@@ -474,7 +472,7 @@ You can also change the borders on the card header and footer as needed, and eve
 
 ## Card layout
 
-In addition to styling the content within cards, Bootstrap includes a few options for laying out series of cards. For the time being, **these layout options are not yet responsive**.
+In addition to styling the content within cards, SuperStrap includes a few options for laying out series of cards. For the time being, **these layout options are not yet responsive**.
 
 ### Card groups
 
@@ -548,7 +546,7 @@ When using card groups with footers, their content will automatically line up.
 
 ### Grid cards
 
-Use the Bootstrap grid system and its [`.row-cols` classes]({{< docsref "/layout/grid#row-columns" >}}) to control how many grid columns (wrapped around your cards) you show per row. For example, here's `.row-cols-1` laying out the cards on one column, and `.row-cols-md-2` splitting four cards to equal width across multiple rows, from the medium breakpoint up.
+Use the SuperStrap grid system and its [`.row-cols` classes]({{< docsref "/layout/grid#row-columns" >}}) to control how many grid columns (wrapped around your cards) you show per row. For example, here's `.row-cols-1` laying out the cards on one column, and `.row-cols-md-2` splitting four cards to equal width across multiple rows, from the medium breakpoint up.
 
 {{< example >}}
 <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -720,17 +718,11 @@ Just like with card groups, card footers will automatically line up.
 </div>
 {{< /example >}}
 
-### Masonry
-
-In `v4` we used a CSS-only technique to mimic the behavior of [Masonry](https://masonry.desandro.com/)-like columns, but this technique came with lots of unpleasant [side effects](https://github.com/twbs/bootstrap/pull/28922). If you want to have this type of layout in `v5`, you can just make use of Masonry plugin. **Masonry is not included in Bootstrap**, but we've made a [demo example]({{< docsref "/examples/masonry" >}}) to help you get started.
-
 ## CSS
 
 ### Variables
 
-{{< added-in "5.2.0" >}}
-
-As part of Bootstrap's evolving CSS variables approach, cards now use local CSS variables on `.card` for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+As part of SuperStrap's evolving CSS variables approach, cards now use local CSS variables on `.card` for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
 
 {{< scss-docs name="card-css-vars" file="scss/_card.scss" >}}
 

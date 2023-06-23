@@ -1,6 +1,6 @@
 ---
 title: Versions
-description: An appendix of hosted documentation for nearly every release of Bootstrap, from v1 through v5.
+description: An appendix of hosted documentation for the releases(more to come) of SuperStrap.
 ---
 
 {{< list-versions.inline >}}

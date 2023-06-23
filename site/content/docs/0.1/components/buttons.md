@@ -1,14 +1,14 @@
 ---
 layout: docs
 title: Buttons
-description: Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+description: Use SuperStrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
 group: components
 toc: true
 ---
 
 ## Base class
 
-Bootstrap has a base `.btn` class that sets up basic styles such as padding and content alignment. By default, `.btn` controls have a transparent border and background color, and lack any explicit focus and hover styles.
+SuperStrap has a base `.btn` class that sets up basic styles such as padding and content alignment. By default, `.btn` controls have a transparent border and background color, and lack any explicit focus and hover styles.
 
 {{< example >}}
 <button type="button" class="btn">Base class</button>
@@ -22,7 +22,7 @@ If you are using the `.btn` class on its own, remember to at least define some e
 
 ## Variants
 
-Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.
+SuperStrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.
 
 {{< example >}}
 {{< buttons.inline >}}
@@ -219,15 +219,13 @@ document.querySelectorAll('.btn').forEach(buttonElement => {
 
 ### Variables
 
-{{< added-in "5.2.0" >}}
-
-As part of Bootstrap's evolving CSS variables approach, buttons now use local CSS variables on `.btn` for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
+As part of SuperStrap's evolving CSS variables approach, buttons now use local CSS variables on `.btn` for enhanced real-time customization. Values for the CSS variables are set via Sass, so Sass customization is still supported, too.
 
 {{< scss-docs name="btn-css-vars" file="scss/_buttons.scss" >}}
 
 Each `.btn-*` modifier class updates the appropriate CSS variables to minimize additional CSS rules with our `button-variant()`, `button-outline-variant()`, and `button-size()` mixins.
 
-Here's an example of building a custom `.btn-*` modifier class like we do for the buttons unique to our docs by reassigning Bootstrap's CSS variables with a mixture of our own CSS and Sass variables.
+Here's an example of building a custom `.btn-*` modifier class like we do for the buttons unique to our docs by reassigning SuperStrap's CSS variables with a mixture of our own CSS and Sass variables.
 
 <div class="bd-example">
   <button type="button" class="btn btn-bd-primary">Custom button</button>
