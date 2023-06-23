@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+n#!/usr/bin/env node
 
 /*!
  * Script to update version number references in the project.

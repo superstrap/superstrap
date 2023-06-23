@@ -32,7 +32,7 @@ publishDir:             "_site"
 module:
   mounts:
     - source:           dist
-      target:           static/docs/0.1/dist
+      target:           static/docs/1.0/dist
     - source:           site/assets
       target:           assets
     - source:           site/content
@@ -43,9 +43,9 @@ module:
       target:           layouts
     - source:           site/static
       target:           static
-    - source:           site/static/docs/0.1/assets/img/favicons/apple-touch-icon.png
+    - source:           site/static/docs/1.0/assets/img/favicons/apple-touch-icon.png
       target:           static/apple-touch-icon.png
-    - source:           site/static/docs/0.1/assets/img/favicons/favicon.ico
+    - source:           site/static/docs/1.0/assets/img/favicons/favicon.ico
       target:           static/favicon.ico
 
 params:
@@ -53,9 +53,9 @@ params:
   description:          "SuperStrap is a supercharged CSS library that lets you build and customize stunning web applications. With powerful JavaScript plugins, a prebuilt grid system, and customizable Sass, SuperStrap is perfect for web developers looking for a feature-packed toolkit. Bring your web projects to life with SuperStrap today!"
   authors:              "Mark Otto, Jacob Thornton, and Bootstrap contributors"
 
-  current_version:      "0.1.0"
-  current_ruby_version: "0.1.0"
-  docs_version:         "0.1"
+  current_version:      "1.0.0"
+  current_ruby_version: "1.0.0"
+  docs_version:         "1.0"
   rfs_version:          "v10.0.0"
   github_org:           "https://github.com/superstrap"
   repo:                 "https://github.com/superstrap/superstrap"
@@ -67,9 +67,9 @@ params:
   swag:                 "https://cottonbureau.com/people/bootstrap"
 
   download:
-    source:             "https://github.com/superstrap/superstrap/archive/v5.3.0-alpha3.zip"
-    dist:               "https://github.com/superstrap/superstrap/releases/download/v5.3.0-alpha3/bootstrap-5.3.0-alpha3-dist.zip"
-    dist_examples:      "https://github.com/superstrap/superstrap/releases/download/v5.3.0-alpha3/bootstrap-5.3.0-alpha3-examples.zip"
+    source:             "https://github.com/superstrap/superstrap/archive/v1.0.0.zip"
+    dist:               "https://github.com/superstrap/superstrap/releases/download/v1.0.0/SuperStrap-1.0.0-dist.zip"
+    dist_examples:      "https://github.com/superstrap/superstrap/releases/download/v1.0.0/SuperStrap-1.0.0-examples.zip"
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
@@ -78,9 +78,9 @@ params:
     css_rtl:          "https://superstrap.gtoy118.repl.co/docs/0.1/dist/css/superstrap.rtl.min.css"
     css_rtl_hash:     "sha384-oebkoKQp44Bra4D8jW9H+LLSaHvGd5yfsO+q9BtTQolXffKlEGoOJfTdlCFFoYqz"
     js:               "https://superstrap.gtoy118.repl.co/docs/0.1/dist/js/superstrap.min.js"
-    js_hash:          "sha384-qrvKIOPv62EDJsC4zQOejAMX7QHsqbum4gPUGblH6B9QFHzhz7oq/MPya56DlwAN"
+    js_hash:          "sha384-E6pTj4INc+ooplllYXmNSMEr1q9DA1LQ21SfsvTsU3AWB4UqAuRTRAu0aEXJrmOE"
     js_bundle:        "https://superstrap.gtoy118.repl.co/docs/0.1/dist/js/superstrap.bundle.min.js"
-    js_bundle_hash:   "sha384-gFsszaXOy5M4m4lItz7t6dvciKWyfplkx/dKo5jvEmswWUkTOJpbeWyqLfVEau1U"
+    js_bundle_hash:   "sha384-KelUyuUqa45R6nz5i2gr0On/yNNXLc51PeRmssjcvA0Nndcm6KOF9/7/vkz18hk1"
     popper:           "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
     popper_hash:      "sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
     popper_esm:       "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/esm/popper.min.js"
