@@ -5,6 +5,9 @@
   "config": {
     "version_short": "1.0"
   },
+  "publishConfig": {
+     "@superstrap:registry": "https://npm.pkg.github.com"
+   }
   "keywords": [
     "css",
     "sass",
