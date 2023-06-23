@@ -17,7 +17,7 @@ jobs:
       # allow coverallsapp/github-action to create new checks issues and fetch code
       checks: write
       contents: read
-    name: JS Tests
+    name: Run Release
     runs-on: ubuntu-latest
 
     steps:
@@ -37,9 +37,3 @@ jobs:
 
       - name: Run release
         run: npm run release
-
-      - name: Run Coveralls
-        uses: coverallsapp/github-action@v2
-        with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
-          path-to-lcov: "./js/coverage/lcov.info"
