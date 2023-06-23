@@ -5,39 +5,39 @@
  * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
  */
 @font-face {
-  font-family: Google Sans;
-  font-weight: 400;
+  font-family: "Google Sans";
   font-style: normal;
+  font-weight: 400;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Regular.ttf");
 }
 @font-face {
-  font-family: Google Sans;
+  font-family: "Google Sans";
+  font-style: italic;
   font-weight: 400;
-  font-style: Italic;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Italic.ttf");
 }
 @font-face {
-  font-family: Google Sans;
-  font-weight: 500;
+  font-family: "Google Sans";
   font-style: normal;
+  font-weight: 500;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Medium.ttf");
 }
 @font-face {
-  font-family: Google Sans;
+  font-family: "Google Sans";
+  font-style: italic;
   font-weight: 500;
-  font-style: Italic;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-MediumItalic.ttf");
 }
 @font-face {
-  font-family: Google Sans;
-  font-weight: 700;
+  font-family: "Google Sans";
   font-style: normal;
+  font-weight: 700;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Bold.ttf");
 }
 @font-face {
-  font-family: Google Sans;
+  font-family: "Google Sans";
+  font-style: italic;
   font-weight: 700;
-  font-style: Italic;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-BoldItalic.ttf");
 }
 :root,
@@ -51,7 +51,7 @@
   --strap-yellow: #d4a20c;
   --strap-green: #07900e;
   --strap-teal: #0ebea4;
-  --strap-cyan: #00aaff;
+  --strap-cyan: #0af;
   --strap-black: #000;
   --strap-white: #fff;
   --strap-gray: #6c757d;
@@ -68,7 +68,7 @@
   --strap-primary: #2775ea;
   --strap-secondary: #adb5bd;
   --strap-success: #07900e;
-  --strap-info: #00aaff;
+  --strap-info: #0af;
   --strap-warning: #d4a20c;
   --strap-danger: #ef130b;
   --strap-light: #e9ecef;
@@ -107,7 +107,7 @@
   --strap-dark-border-subtle: #adb5bd;
   --strap-white-rgb: 255, 255, 255;
   --strap-black-rgb: 0, 0, 0;
-  --strap-font-sans-serif: Google Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --strap-font-sans-serif: "Google Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --strap-font-monospace: Google Mono, monospace;
   --strap-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
   --strap-body-font-family: var(--strap-font-sans-serif);
@@ -3173,7 +3173,8 @@ textarea.form-control-lg {
   box-shadow: var(--strap-box-shadow);
 }
 .input-group:nth-child(n) {
-  box-shadow: none !important;
+  box-shadow: none;
+  --strap-btn-box-shadow: none;
 }
 .input-group > .form-control,
 .input-group > .form-select,
@@ -3540,7 +3541,7 @@ textarea.form-control-lg {
   --strap-btn-disabled-color: #fff;
   --strap-btn-disabled-bg: #2775ea;
   --strap-btn-disabled-border-color: #2775ea;
-  --strap-btn-box-shadow: 0 1px .25rem rgba(0,0,0, .3), 0 1px 4px rgba(39, 117, 234, 20%);
+  --strap-btn-box-shadow: 0 1px .25rem rgba(0, 0, 0, .3), 0 1px 4px rgba(39, 117, 234, 20%);
 }
 
 .btn-secondary {
@@ -3558,7 +3559,7 @@ textarea.form-control-lg {
   --strap-btn-disabled-color: #000;
   --strap-btn-disabled-bg: #adb5bd;
   --strap-btn-disabled-border-color: #adb5bd;
-  --strap-btn-box-shadow: 0 1px .25rem rgba(0,0,0, .3), 0 1px 4px rgba(173, 181, 189, 20%);
+  --strap-btn-box-shadow: 0 1px .25rem rgba(0, 0, 0, .3), 0 1px 4px rgba(173, 181, 189, 20%);
 }
 
 .btn-success {
@@ -3576,13 +3577,13 @@ textarea.form-control-lg {
   --strap-btn-disabled-color: #fff;
   --strap-btn-disabled-bg: #07900e;
   --strap-btn-disabled-border-color: #07900e;
-  --strap-btn-box-shadow: 0 1px .25rem rgba(0,0,0, .3), 0 1px 4px rgba(7, 144, 14, 20%);
+  --strap-btn-box-shadow: 0 1px .25rem rgba(0, 0, 0, .3), 0 1px 4px rgba(7, 144, 14, 20%);
 }
 
 .btn-info {
   --strap-btn-color: #fff;
-  --strap-btn-bg: #00aaff;
-  --strap-btn-border-color: #00aaff;
+  --strap-btn-bg: #0af;
+  --strap-btn-border-color: #0af;
   --strap-btn-hover-color: #fff;
   --strap-btn-hover-bg: #0091d9;
   --strap-btn-hover-border-color: #0088cc;
@@ -3592,9 +3593,9 @@ textarea.form-control-lg {
   --strap-btn-active-border-color: #0080bf;
   --strap-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --strap-btn-disabled-color: #fff;
-  --strap-btn-disabled-bg: #00aaff;
-  --strap-btn-disabled-border-color: #00aaff;
-  --strap-btn-box-shadow: 0 1px .25rem rgba(0,0,0, .3), 0 1px 4px rgba(0, 170, 255, 20%);
+  --strap-btn-disabled-bg: #0af;
+  --strap-btn-disabled-border-color: #0af;
+  --strap-btn-box-shadow: 0 1px .25rem rgba(0, 0, 0, .3), 0 1px 4px rgba(0, 170, 255, 20%);
 }
 
 .btn-warning {
@@ -3612,7 +3613,7 @@ textarea.form-control-lg {
   --strap-btn-disabled-color: #fff;
   --strap-btn-disabled-bg: #d4a20c;
   --strap-btn-disabled-border-color: #d4a20c;
-  --strap-btn-box-shadow: 0 1px .25rem rgba(0,0,0, .3), 0 1px 4px rgba(212, 162, 12, 20%);
+  --strap-btn-box-shadow: 0 1px .25rem rgba(0, 0, 0, .3), 0 1px 4px rgba(212, 162, 12, 20%);
 }
 
 .btn-danger {
@@ -3630,7 +3631,7 @@ textarea.form-control-lg {
   --strap-btn-disabled-color: #fff;
   --strap-btn-disabled-bg: #ef130b;
   --strap-btn-disabled-border-color: #ef130b;
-  --strap-btn-box-shadow: 0 1px .25rem rgba(0,0,0, .3), 0 1px 4px rgba(239, 19, 11, 20%);
+  --strap-btn-box-shadow: 0 1px .25rem rgba(0, 0, 0, .3), 0 1px 4px rgba(239, 19, 11, 20%);
 }
 
 .btn-light {
@@ -3648,7 +3649,7 @@ textarea.form-control-lg {
   --strap-btn-disabled-color: #000;
   --strap-btn-disabled-bg: #e9ecef;
   --strap-btn-disabled-border-color: #e9ecef;
-  --strap-btn-box-shadow: 0 1px .25rem rgba(0,0,0, .3), 0 1px 4px rgba(233, 236, 239, 20%);
+  --strap-btn-box-shadow: 0 1px .25rem rgba(0, 0, 0, .3), 0 1px 4px rgba(233, 236, 239, 20%);
 }
 
 .btn-dark {
@@ -3666,7 +3667,7 @@ textarea.form-control-lg {
   --strap-btn-disabled-color: #fff;
   --strap-btn-disabled-bg: #212529;
   --strap-btn-disabled-border-color: #212529;
-  --strap-btn-box-shadow: 0 1px .25rem rgba(0,0,0, .3), 0 1px 4px rgba(33, 37, 41, 20%);
+  --strap-btn-box-shadow: 0 1px .25rem rgba(0, 0, 0, .3), 0 1px 4px rgba(33, 37, 41, 20%);
 }
 
 .btn-outline-primary {
@@ -3724,19 +3725,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-info {
-  --strap-btn-color: #00aaff;
-  --strap-btn-border-color: #00aaff;
+  --strap-btn-color: #0af;
+  --strap-btn-border-color: #0af;
   --strap-btn-hover-color: #fff;
-  --strap-btn-hover-bg: #00aaff;
-  --strap-btn-hover-border-color: #00aaff;
+  --strap-btn-hover-bg: #0af;
+  --strap-btn-hover-border-color: #0af;
   --strap-btn-focus-shadow-rgb: 0, 170, 255;
   --strap-btn-active-color: #fff;
-  --strap-btn-active-bg: #00aaff;
-  --strap-btn-active-border-color: #00aaff;
+  --strap-btn-active-bg: #0af;
+  --strap-btn-active-border-color: #0af;
   --strap-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --strap-btn-disabled-color: #00aaff;
+  --strap-btn-disabled-color: #0af;
   --strap-btn-disabled-bg: transparent;
-  --strap-btn-disabled-border-color: #00aaff;
+  --strap-btn-disabled-border-color: #0af;
   --strap-gradient: none;
   --strap-btn-box-shadow: 0 1px 11px rgba(0, 170, 255, 22%), 0 0 5px -2px rgba(0, 170, 255, 72%);
 }
@@ -4982,10 +4983,10 @@ textarea.form-control-lg {
 .card-header {
   padding: var(--strap-card-cap-padding-y) var(--strap-card-cap-padding-x);
   margin-bottom: 0;
+  font-size: 13px;
   color: var(--strap-card-cap-color);
   background-color: var(--strap-card-cap-bg);
   border-bottom: var(--strap-card-border-width) solid var(--strap-card-border-color);
-  font-size: 13px;
 }
 .card-header:first-child {
   border-radius: var(--strap-card-inner-border-radius) var(--strap-card-inner-border-radius) 0 0;

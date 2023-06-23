@@ -404,7 +404,7 @@ class Carousel extends BaseComponent {
 
   // Static
   static jQueryInterface(config) {
-    return this.each(function() {
+    return this.each(function () {
       const data = Carousel.getOrCreateInstance(this, config)
 
       if (typeof config === 'number') {
@@ -427,7 +427,7 @@ class Carousel extends BaseComponent {
  * Data API implementation
  */
 
-EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_DATA_SLIDE, function(event) {
+EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_DATA_SLIDE, function (event) {
   const target = SelectorEngine.getElementFromSelector(this)
 
   if (!target || !target.classList.contains(CLASS_NAME_CAROUSEL)) {

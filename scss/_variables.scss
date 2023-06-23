@@ -1490,7 +1490,7 @@ $badge-border-radius:               var(--#{$prefix}border-radius) !default;
 // Modals
 
 // scss-docs-start modal-variables
-$modal-inner-padding:               $spacer*.75 !default;
+$modal-inner-padding:               $spacer * .75 !default;
 
 $modal-footer-margin-between:       .5rem !default;
 

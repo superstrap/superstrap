@@ -14,7 +14,7 @@
   --strap-yellow: #d4a20c;
   --strap-green: #07900e;
   --strap-teal: #0ebea4;
-  --strap-cyan: #00aaff;
+  --strap-cyan: #0af;
   --strap-black: #000;
   --strap-white: #fff;
   --strap-gray: #6c757d;
@@ -31,7 +31,7 @@
   --strap-primary: #2775ea;
   --strap-secondary: #adb5bd;
   --strap-success: #07900e;
-  --strap-info: #00aaff;
+  --strap-info: #0af;
   --strap-warning: #d4a20c;
   --strap-danger: #ef130b;
   --strap-light: #e9ecef;
@@ -70,7 +70,7 @@
   --strap-dark-border-subtle: #adb5bd;
   --strap-white-rgb: 255, 255, 255;
   --strap-black-rgb: 0, 0, 0;
-  --strap-font-sans-serif: Google Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --strap-font-sans-serif: "Google Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --strap-font-monospace: Google Mono, monospace;
   --strap-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
   --strap-body-font-family: var(--strap-font-sans-serif);

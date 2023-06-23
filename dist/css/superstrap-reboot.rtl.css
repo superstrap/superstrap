@@ -4,39 +4,39 @@
  * Licensed under MIT (https://github.com/superstrap/superstrap/blob/main/LICENSE)
  */
 @font-face {
-  font-family: Google Sans;
-  font-weight: 400;
+  font-family: "Google Sans";
   font-style: normal;
+  font-weight: 400;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Regular.ttf");
 }
 @font-face {
-  font-family: Google Sans;
+  font-family: "Google Sans";
+  font-style: italic;
   font-weight: 400;
-  font-style: Italic;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Italic.ttf");
 }
 @font-face {
-  font-family: Google Sans;
-  font-weight: 500;
+  font-family: "Google Sans";
   font-style: normal;
+  font-weight: 500;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Medium.ttf");
 }
 @font-face {
-  font-family: Google Sans;
+  font-family: "Google Sans";
+  font-style: italic;
   font-weight: 500;
-  font-style: Italic;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-MediumItalic.ttf");
 }
 @font-face {
-  font-family: Google Sans;
-  font-weight: 700;
+  font-family: "Google Sans";
   font-style: normal;
+  font-weight: 700;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-Bold.ttf");
 }
 @font-face {
-  font-family: Google Sans;
+  font-family: "Google Sans";
+  font-style: italic;
   font-weight: 700;
-  font-style: Italic;
   src: url("https://fonts.gabrieltoy1.repl.co/fonts/GoogleSans-BoldItalic.ttf");
 }
 :root,
@@ -50,7 +50,7 @@
   --strap-yellow: #d4a20c;
   --strap-green: #07900e;
   --strap-teal: #0ebea4;
-  --strap-cyan: #00aaff;
+  --strap-cyan: #0af;
   --strap-black: #000;
   --strap-white: #fff;
   --strap-gray: #6c757d;
@@ -67,7 +67,7 @@
   --strap-primary: #2775ea;
   --strap-secondary: #adb5bd;
   --strap-success: #07900e;
-  --strap-info: #00aaff;
+  --strap-info: #0af;
   --strap-warning: #d4a20c;
   --strap-danger: #ef130b;
   --strap-light: #e9ecef;
@@ -106,7 +106,7 @@
   --strap-dark-border-subtle: #adb5bd;
   --strap-white-rgb: 255, 255, 255;
   --strap-black-rgb: 0, 0, 0;
-  --strap-font-sans-serif: Google Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --strap-font-sans-serif: "Google Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --strap-font-monospace: Google Mono, monospace;
   --strap-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0));
   --strap-body-font-family: var(--strap-font-sans-serif);
