@@ -59,7 +59,6 @@ describe('Dropdown', () => {
 
     it('should work on invalid markup', () => {
       return new Promise(resolve => {
-        // TODO: REMOVE in v6
         fixtureEl.innerHTML = [
           '<div class="dropdown">',
           '  <div class="dropdown-menu">',
