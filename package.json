@@ -33,6 +33,7 @@
   "sass": "scss/superstrap.scss",
   "style": "dist/css/superstrap.css",
   "scripts": {
+    "github-pages": "hugo server --baseURL ${{ steps.pages.outputs.base_url }}/ --disableFastRender --printUnusedTemplates",
     "start": "npm-run-all --parallel watch docs-serve",
     "run": "npm-run-all docs-build docs-serve",
     "bundlewatch": "bundlewatch --config .bundlewatch.config.json",
