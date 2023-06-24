@@ -54,7 +54,7 @@ jobs:
         run: npm run docs-build
 
       - name: Serve Docs
-        run: hugo server --baseURL "${{ steps.pages.outputs.base_url }}/" --disableFastRender --printUnusedTemplates
+        run: npm run github-pages
   deploy:
     environment:
       name: github-pages
