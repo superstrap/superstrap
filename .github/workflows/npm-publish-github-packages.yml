@@ -21,11 +21,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     permissions:
-      packages: 
-        write
-        read
-      contents: 
-        read
+      packages: write|read
+      contents: read
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
